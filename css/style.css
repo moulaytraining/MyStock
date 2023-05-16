@@ -1,0 +1,4 @@
+body {margin:30px;}
+#logo {width: 180px; margin:15px;}
+.fakeimgs {display: flex; max-width:100%;}
+.fakeimg {width: 180px; margin:15px;}
