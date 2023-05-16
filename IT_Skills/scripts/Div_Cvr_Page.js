@@ -1,7 +1,7 @@
 filterEntries("all")
 function filterEntries(c) {
   var x, i;
-  x = document.getElementsByClassName("column");
+  xx = document.getElementsByClassName("column");
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
     mouRemoveClass(x[i], "show_entry");
