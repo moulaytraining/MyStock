@@ -1,7 +1,7 @@
 filterEntries("all")
 function filterEntries(c) {
   var x, i;
-  xx = document.getElementsByClassName("column");
+  x = document.getElementsByClassName("column");
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
     mouRemoveClass(x[i], "show_entry");
@@ -34,7 +34,7 @@ function mouRemoveClass(element, name) {
 // Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("entries_filter");
 var btns = btnContainer.getElementsByClassName("category_butn");
-for (var i = 0; i < btns.length; i++) {
+for (var ii = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
