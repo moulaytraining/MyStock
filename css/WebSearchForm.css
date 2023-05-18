@@ -1,0 +1,7 @@
+*, :after, :before {box-sizing: border-box;}
+#myNotesBoard{background-color: lightblue;text-align: center;display: block;height: fit-content;top: 167px;right: 60px;width: fit-content;
+              position: fixed;z-index: 999;padding: 16px;border:solid maroon 5px;}
+#input-area{margin: 5px;border: solid blue;padding: 9px;}
+#myQuery{font-family: auto;padding: 2px;margin: 2px;color: red;font-weight: 500;" placeholder="Enter your query selector}
+#myText1{width: 518px; height: 173px; direction: ltr; background-color: khaki; display: block;resize:vertical;}
+#save-file{margin: 5px auto;border: red 2px solid;background-color: lime;font-weight:bolder;}
