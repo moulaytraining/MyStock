@@ -1,0 +1,15 @@
+body{background-image:url("https://freesvg.org/img/Anonymous_Lightbulb_Bright.png");background-repeat:no-repeat;background-size:cover;}
+#MyAppHeader {margin:5px;}
+#MyAppHeader h1{text-align:center;background-color:antiquewhite;margin:10px;}
+header span {display: flex;background-color: black;padding:5px;margin:10px;}
+.note-action{color:maroon;background-color:#d9d630;border:3px solid red;float:left;}
+.note-action:hover{background-color:maroon;color:#d9d630;border:3px solid white;}
+#MyAppAssignment {display:flex;margin:5px;}
+textarea{display:block;width: 665px; height: 150px;margin:5px 10px;}
+#MyRawText {overflow: hidden;}
+#RawTextActions {}
+#TransformedText {overflow: hidden;}
+#RwTxtArea {background-color: lightgreen;}
+#TrnsfrmdTxt1 {text-transform:capitalize; background-color: skyblue;}
+#TrnsfrmdTxt2 { background-color: khaki;}
+#TrnsfrmdTxt3 { background-color: lightgray;}
