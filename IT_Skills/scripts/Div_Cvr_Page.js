@@ -1,4 +1,4 @@
-filterEntries("all")
+filterEntries(document.querySelector('.active-entry'))
 function filterEntries(element) {
   var x, i,j=element.getAttribute("data-categ");
   x = document.getElementsByClassName("column");
