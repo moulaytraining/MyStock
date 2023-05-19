@@ -1,11 +1,12 @@
 filterEntries(document.querySelector('.active-entry'))
+   filterEntries(document.querySelector('.active-entry'))
 function filterEntries(element) {
   var x, i,j=element.getAttribute("data-categ");
   x = document.getElementsByClassName("column");
   if (j == "all") j = "";
   for (i = 0; i < x.length; i++) {
     mouRemoveClass(x[i], "show_entry");
-    if (x[i].className.indexOf(j) > -1) mouAddClass(x[i], "show_entry");
+    if (x[i].dataset.categ.indexOf(j) > -1) mouAddClass(x[i], "show_entry");
   }
 }
 
