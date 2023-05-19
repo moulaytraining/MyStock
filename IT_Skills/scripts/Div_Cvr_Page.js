@@ -1,11 +1,11 @@
 filterEntries("all")
-function filterEntries(c) {
-  var x, i;
+function filterEntries(element) {
+  var x, i,j=elementgetAttribute("data-categ");
   x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
+  if (j == "all") j = "";
   for (i = 0; i < x.length; i++) {
     mouRemoveClass(x[i], "show_entry");
-    if (x[i].className.indexOf(c) > -1) mouAddClass(x[i], "show_entry");
+    if (x[i].className.indexOf(j) > -1) mouAddClass(x[i], "show_entry");
   }
 }
 
