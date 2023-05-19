@@ -1,6 +1,6 @@
 filterEntries("all")
 function filterEntries(element) {
-  var x, i,j=elementgetAttribute("data-categ");
+  var x, i,j=element.getAttribute("data-categ");
   x = document.getElementsByClassName("column");
   if (j == "all") j = "";
   for (i = 0; i < x.length; i++) {
