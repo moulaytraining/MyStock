@@ -1,7 +1,9 @@
-function GetFiles(){ 
+
   const file1="https://moulaytraining.github.io/MyStock/IT_Skills/xmls/cdcatalog.xml";
   const file2="https://moulaytraining.github.io/MyStock/IT_Skills/xslts/cdcatalogStyle.txt";
   var myTextElem1, myTextElem2;
+  const xhttp = new XMLHttpRequest();
+function GetFiles(){ 
   myTextElem1 = document.body.appendChild(document.createElement('textarea'));
   myTextElem1.setAttribute("id", "xmlcode");
   myTextElem1.style.display="none";
@@ -13,7 +15,7 @@ function GetFiles(){
 }
 
 function LoadFiles(ElemId,file){ 
-  const xhttp = new XMLHttpRequest();
+
   xhttp.onload = function() {document.getElementById(ElemId).value = this.responseText;}
   xhttp.open("GET", file);
   xhttp.send();
