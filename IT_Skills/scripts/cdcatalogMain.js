@@ -18,8 +18,9 @@ function GetFiles(){
     myTextElem2.innerHTML=text;
     }); 
   myTextElem2.style.display="none";   
-}
+  
   // Waiting for three seconds 
   const date = Date.now();
   let currentDate = null;
-  do {currentDate = Date.now();} while (currentDate - date < 3000);}
+  do {currentDate = Date.now();} while (currentDate - date < 3000);
+}
