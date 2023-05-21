@@ -1,8 +1,14 @@
-function GetFiles()
-{
- var file1="https://moulaytraining.github.io/MyStock/IT_Skills/xmls/cdcatalog.xml";
+function GetFiles(){
+  var file1="https://moulaytraining.github.io/MyStock/IT_Skills/xmls/cdcatalog.xml";
  const Myelem1=document.getElementById("xmlcode");
- fetch(file1).then(x=>x.text()).then(y=>Myelem1.value = y);}
+ var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      Myelem1.value =this.responseText;
+    }
+  };
+  xhttp.open("GET", file1, true);
+  xhttp.send();}
 
  function transformxml(){
 if (window.ActiveXObject)
