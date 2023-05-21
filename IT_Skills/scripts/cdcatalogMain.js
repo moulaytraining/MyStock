@@ -3,7 +3,7 @@ function GetFiles(){
   
   myTextElem1 = document.querySelector('article').appendChild(document.createElement('textarea'));
   myTextElem1.setAttribute("id", "xmlcode");
-  document.querySelector('xmlcode').value="<?xml version="1.0" encoding="UTF-8"?>
+  document.querySelector('xmlcode').value="<?xml version='1.0' encoding='UTF-8'?>
 <catalog>
   <cd>
     <title>Empire Burlesque</title>
