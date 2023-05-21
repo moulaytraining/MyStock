@@ -5,7 +5,8 @@ function GetFiles(){
   
   myTextElem1 = document.querySelector('article').appendChild(document.createElement('textarea'));
   myTextElem1.setAttribute("id", "xmlcode");
-  fetch(file1).then(x=>x.text()).then(y=>myTextElem1.value = y);
+
+  fetch(file1).then(x=>x.text()).then(y=>{myTextElem1.value = y});
   myTextElem1.style.display="none";
 
   myTextElem2 = document.querySelector('article').appendChild(document.createElement('textarea'));
