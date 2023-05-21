@@ -1,12 +1,12 @@
 async function transformxml(){
- var myTextElem1, myTextElem2,file,text; 
+ var xmltxt, xsltxt,file,text; 
   
   myTextElem1 = document.querySelector('#xmlcode');
   file="https://moulaytraining.github.io/MyStock/IT_Skills/xmls/cdcatalog.xml";
     await fetch(file)
     .then((response) => response.text())
     .then((text) => {
-     myTextElem1.innerText=text;
+     xmltxt=text;
     });  
   myTextElem1.style.display="none";
   myTextElem2 =  document.querySelector('#xsltcode');
@@ -14,7 +14,7 @@ async function transformxml(){
     await fetch(file)
     .then((response) => response.text())
     .then((text) => {
-    myTextElem2.innerText=text;
+    xsltxt=text;
     }); 
   myTextElem2.style.display="none";   
   
@@ -29,8 +29,8 @@ if (window.ActiveXObject)
  // IE
 
  // XML:
- var xmltxt
- xmltxt=document.getElementById("xmlcode").innerText;
+ //var xmltxt
+ //xmltxt=document.getElementById("xmlcode").innerText;
  if (xmltxt=="")
   {
   alert("The XML is empty")
@@ -46,8 +46,8 @@ if (window.ActiveXObject)
   return false
   }
  // XSL:
- var xsltxt;
- xsltxt=document.getElementById("xsltcode").innerText;
+ //var xsltxt;
+ //xsltxt=document.getElementById("xsltcode").innerText;
  if (xsltxt=="")
   {
   alert("The XSLT is empty")
@@ -70,8 +70,8 @@ else if (document.implementation && document.implementation.createDocument)
  {
  // Mozilla
  // XML:
- var xmltxt
- xmltxt=document.getElementById("xmlcode").innerText
+ //var xmltxt
+ //xmltxt=document.getElementById("xmlcode").innerText
  if (xmltxt=="")
   {
   alert("The XML is empty")
@@ -87,8 +87,8 @@ else if (document.implementation && document.implementation.createDocument)
   }
  // XSL:
  var xsltPrs=new XSLTProcessor();
- var xsltxt
- xsltxt=document.getElementById("xsltcode").innerText
+ //var xsltxt
+ //xsltxt=document.getElementById("xsltcode").innerText
  if (xsltxt=="")
   {
   alert("The XSLT is empty")
@@ -101,7 +101,6 @@ else if (document.implementation && document.implementation.createDocument)
   alert("Error in XSLT\n\n" + xsl.documentElement.childNodes[0].nodeValue);
   return false;
   }
-
  xsltPrs.importStylesheet(xsl);
   
  // Transform:
