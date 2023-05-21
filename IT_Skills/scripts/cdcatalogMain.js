@@ -3,7 +3,7 @@ function GetFiles(){
   
   myTextElem1 = document.querySelector('#xmlcode');
   file="https://moulaytraining.github.io/MyStock/IT_Skills/xmls/cdcatalog.xml";
-    fetch(file)
+    await fetch(file)
     .then((response) => response.text())
     .then((text) => {
      myTextElem1.innerHTML=text;
@@ -12,7 +12,7 @@ function GetFiles(){
 
   myTextElem2 =  document.querySelector('#xsltcode');
    file="https://moulaytraining.github.io/MyStock/IT_Skills/xslts/cdcatalogStyle.txt";
-    fetch(file)
+    await fetch(file)
     .then((response) => response.text())
     .then((text) => {
     myTextElem2.innerHTML=text;
