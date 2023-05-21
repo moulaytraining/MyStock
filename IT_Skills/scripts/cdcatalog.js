@@ -1,4 +1,4 @@
-function transformxml(){
+async function transformxml(){
  var myTextElem1, myTextElem2,file,text; 
   
   myTextElem1 = document.querySelector('#xmlcode');
