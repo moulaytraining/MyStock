@@ -1,8 +1,10 @@
-function transformxml()
+function GetFiles()
 {
  var file1="https://moulaytraining.github.io/MyStock/IT_Skills/xmls/cdcatalog.xml";
  const Myelem1=document.getElementById("xmlcode");
- fetch(file1).then(x=>x.text()).then(y=>Myelem1.innerHTML = y);
+ fetch(file1).then(x=>x.text()).then(y=>Myelem1.value = y);}
+
+ function transformxml(){
 if (window.ActiveXObject)
  {
  // IE
