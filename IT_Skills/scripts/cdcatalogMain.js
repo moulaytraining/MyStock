@@ -1,6 +1,6 @@
 function GetFiles(){ 
   const file1="https://moulaytraining.github.io/MyStock/IT_Skills/xmls/cdcatalog.xml";
-  const file2="https://moulaytraining.github.io/MyStock/IT_Skills/xslts/cdcatalogXSL.txt";
+  const file2="https://moulaytraining.github.io/MyStock/IT_Skills/xslts/cdcatalogStyle.txt";
   LoadFiles("xmlcode",file1);
   LoadFiles("xsltcode",file2);
 }
