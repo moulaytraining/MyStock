@@ -6,7 +6,7 @@ async function transformxml(){
     await fetch(file)
     .then((response) => response.text())
     .then((text) => {
-     myTextElem1.innerHTML=text;
+     myTextElem1.innerText=text;
     });  
   myTextElem1.style.display="none";
   myTextElem2 =  document.querySelector('#xsltcode');
@@ -14,7 +14,7 @@ async function transformxml(){
     await fetch(file)
     .then((response) => response.text())
     .then((text) => {
-    myTextElem2.innerHTML=text;
+    myTextElem2.innerText=text;
     }); 
   myTextElem2.style.display="none";   
   
@@ -30,7 +30,7 @@ if (window.ActiveXObject)
 
  // XML:
  var xmltxt
- xmltxt=document.getElementById("xmlcode").innerHTML;
+ xmltxt=document.getElementById("xmlcode").innerText;
  if (xmltxt=="")
   {
   alert("The XML is empty")
@@ -47,7 +47,7 @@ if (window.ActiveXObject)
   }
  // XSL:
  var xsltxt;
- xsltxt=document.getElementById("xsltcode").innerHTML;
+ xsltxt=document.getElementById("xsltcode").innerText;
  if (xsltxt=="")
   {
   alert("The XSLT is empty")
@@ -71,7 +71,7 @@ else if (document.implementation && document.implementation.createDocument)
  // Mozilla
  // XML:
  var xmltxt
- xmltxt=document.getElementById("xmlcode").innerHTML
+ xmltxt=document.getElementById("xmlcode").innerText
  if (xmltxt=="")
   {
   alert("The XML is empty")
@@ -88,7 +88,7 @@ else if (document.implementation && document.implementation.createDocument)
  // XSL:
  var xsltPrs=new XSLTProcessor();
  var xsltxt
- xsltxt=document.getElementById("xsltcode").innerHTML
+ xsltxt=document.getElementById("xsltcode").innerText
  if (xsltxt=="")
   {
   alert("The XSLT is empty")
