@@ -5,12 +5,19 @@ function GetFiles(){
   
   myTextElem1 = document.querySelector('article').appendChild(document.createElement('textarea'));
   myTextElem1.setAttribute("id", "xmlcode");
-
-  fetch(file1).then(x=>x.text()).then(y=>{myTextElem1.value = y});
+  fetch(file1)
+  .then((response) => response.text())
+  .then((text) => {
+   myTextElem1.value = text;
+  });  
   myTextElem1.style.display="none";
 
   myTextElem2 = document.querySelector('article').appendChild(document.createElement('textarea'));
   myTextElem2.setAttribute("id", "xsltcode");
-  fetch(file2).then(x=>x.text()).then(y=>myTextElem2.value = y);
+  fetch(file2)
+  .then((response) => response.text())
+  .then((text) => {
+  myTextElem2.value = text;
+  });
   myTextElem2.style.display="none"; 
 }
