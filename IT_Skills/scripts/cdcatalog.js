@@ -1,5 +1,8 @@
 function transformxml()
 {
+ var file1="https://moulaytraining.github.io/MyStock/IT_Skills/xmls/cdcatalog.xml";
+ comst Myelem1=document.getElementById("xmlcode");
+ fetch(file1).then(x=>x.text()).then(y=>Myelem1.innerHTML = y);
 if (window.ActiveXObject)
  {
  // IE
