@@ -10,7 +10,7 @@ async function transformxml(){
     });  
   myTextElem1.style.display="none";
   myTextElem2 =  document.querySelector('#xsltcode');
-   file="https://moulaytraining.github.io/MyStock/IT_Skills/xslts/cdcatalogStyle.txt";
+   file="https://moulaytraining.github.io/MyStock/IT_Skills/xslts/cdcatalogStyle.xml";
     await fetch(file)
     .then((response) => response.text())
     .then((text) => {
