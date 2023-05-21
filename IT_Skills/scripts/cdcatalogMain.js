@@ -3,7 +3,7 @@ function GetFiles(){
   
   myTextElem1 = document.querySelector('article').appendChild(document.createElement('textarea'));
   myTextElem1.setAttribute("id", "xmlcode");
-  myTextElem1.value="<?xml version="1.0" encoding="UTF-8"?>
+  document.querySelector('xmlcode').value="<?xml version="1.0" encoding="UTF-8"?>
 <catalog>
   <cd>
     <title>Empire Burlesque</title>
@@ -218,7 +218,7 @@ function GetFiles(){
 
   myTextElem2 = document.querySelector('article').appendChild(document.createElement('textarea'));
   myTextElem2.setAttribute("id", "xsltcode");
-  myTextElem2.value="<?xml version="1.0" encoding="UTF-8"?>
+  document.querySelector('xsltcode').value="<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/">
 <html> 
