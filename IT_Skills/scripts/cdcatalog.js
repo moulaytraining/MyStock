@@ -1,3 +1,8 @@
+function GetData() {
+  var file="https://moulaytraining.github.io/MyStock/IT_Skills/scripts/cdcatalog.js";
+ var Myelem=document.getElementById("xmlcode");
+    fetch(file).then(x=>x.text()).then(y=>Myelem.value = y);
+};
 function transformxml()
 {
 if (window.ActiveXObject)
@@ -6,7 +11,7 @@ if (window.ActiveXObject)
 
  // XML:
  var xmltxt
- xmltxt=document.getElementById("xmlcode").innerText
+ xmltxt=document.getElementById("xmlcode").value
  if (xmltxt=="")
   {
   alert("The XML is empty")
@@ -23,7 +28,7 @@ if (window.ActiveXObject)
   }
  // XSL:
  var xsltxt
- xsltxt=document.getElementById("xsltcode").innerText
+ xsltxt=document.getElementById("xsltcode").value
  if (xsltxt=="")
   {
   alert("The XSLT is empty")
@@ -47,7 +52,7 @@ else if (document.implementation && document.implementation.createDocument)
  // Mozilla
  // XML:
  var xmltxt
- xmltxt=document.getElementById("xmlcode").innerText
+ xmltxt=document.getElementById("xmlcode").value
  if (xmltxt=="")
   {
   alert("The XML is empty")
@@ -64,7 +69,7 @@ else if (document.implementation && document.implementation.createDocument)
  // XSL:
  var xsltPrs=new XSLTProcessor();
  var xsltxt
- xsltxt=document.getElementById("xsltcode").innerText
+ xsltxt=document.getElementById("xsltcode").value
  if (xsltxt=="")
   {
   alert("The XSLT is empty")
@@ -91,3 +96,4 @@ else
  alert("Your browser does not support this example.");
  }
 }
+
