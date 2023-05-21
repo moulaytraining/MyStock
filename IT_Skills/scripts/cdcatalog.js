@@ -1,5 +1,5 @@
 function GetData() {
-  var file="https://moulaytraining.github.io/MyStock/IT_Skills/scripts/cdcatalog.js";
+  var file="https://moulaytraining.github.io/MyStock/IT_Skills/xmls/cdcatalog.xml";
  var Myelem=document.getElementById("xmlcode");
     fetch(file).then(x=>x.text()).then(y=>Myelem.value = y);
 };
