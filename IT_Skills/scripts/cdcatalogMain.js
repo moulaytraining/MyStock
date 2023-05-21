@@ -22,5 +22,6 @@ function GetFiles(){
   // Waiting for three seconds 
   const date = Date.now();
   let currentDate = null;
-  do {currentDate = Date.now();} while (currentDate - date < 3000);
+  do {currentDate = Date.now();} 
+  while (currentDate - date < 3000);
 }
