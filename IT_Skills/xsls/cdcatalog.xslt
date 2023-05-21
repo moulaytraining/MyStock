@@ -1,11 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<xsl:stylesheet version="1.0"
-xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-
-<xsl:template match="/">
-  <html>
-  <link rel="stylesheet" type="text/css" href="/css/cdcatalog.css">
+<?xml version="1.0" encoding="iso-8859-1"?>  
+<html xsl:version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml">    
+  <link rel="stylesheet" type="text/css" href="https://moulaytraining.github.io/MyStock/IT_Skills/css/cdcatalog.css">
   <body>
   <h2>My CD Collection</h2>
   <table border="1">
