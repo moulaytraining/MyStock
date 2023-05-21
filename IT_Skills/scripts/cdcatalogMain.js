@@ -1,14 +1,20 @@
 function GetFiles(){ 
   const file1="https://moulaytraining.github.io/MyStock/IT_Skills/xmls/cdcatalog.xml";
   const file2="https://moulaytraining.github.io/MyStock/IT_Skills/xslts/cdcatalogStyle.txt";
+  var myTextElem1, myTextElem2;
+  myTextElem1 = document.body.appendChild(document.createElement('textarea'));
+  myTextElem1.setAttribute("id", "xmlcode");
+  myTextElem1.style.display="none";
   LoadFiles("xmlcode",file1);
-  LoadFiles("xsltcode",file2);
+  myTextElem2 = document.body.appendChild(document.createElement('textarea'));
+  myTextElem2.setAttribute("id", "xsltcode");
+  myTextElem2.style.display="none"; 
+  LoadFiles("xsltcode",file2);  
 }
+
 function LoadFiles(ElemId,file){ 
   const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-   document.getElementById(ElemId).value = this.responseText;
-  }
+  xhttp.onload = function() {document.getElementById(ElemId).value = this.responseText;}
   xhttp.open("GET", file);
   xhttp.send();
 }
