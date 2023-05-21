@@ -4,11 +4,11 @@
   var myTextElem1, myTextElem2;
   const xhttp = new XMLHttpRequest();
 function GetFiles(){ 
-  myTextElem1 = document.body.appendChild(document.createElement('textarea'));
+  myTextElem1 = document.querySelector('article').appendChild(document.createElement('textarea'));
   myTextElem1.setAttribute("id", "xmlcode");
   myTextElem1.style.display="none";
   LoadFiles("xmlcode",file1);
-  myTextElem2 = document.body.appendChild(document.createElement('textarea'));
+  myTextElem2 = document.querySelector('article').appendChild(document.createElement('textarea'));
   myTextElem2.setAttribute("id", "xsltcode");
   myTextElem2.style.display="none"; 
   LoadFiles("xsltcode",file2);  
