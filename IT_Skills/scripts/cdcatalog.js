@@ -1,7 +1,11 @@
 function GetData() {
   var file="https://moulaytraining.github.io/MyStock/IT_Skills/xmls/cdcatalog.xml";
  var Myelem=document.getElementById("xmlcode");
-    fetch(file).then(x=>x.text()).then(y=>Myelem.value = y);
+ fetch(file)
+    .then((response) => response.text())
+    .then((text) => {
+      Myelem.innerHTML = text;
+    });
 }
 function transformxml()
 {
