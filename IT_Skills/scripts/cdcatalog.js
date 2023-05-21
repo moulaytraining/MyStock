@@ -30,7 +30,7 @@ if (window.ActiveXObject)
 
  // XML:
  var xmltxt
- xmltxt=document.getElementById("xmlcode").value
+ xmltxt=document.getElementById("xmlcode").innerHTML;
  if (xmltxt=="")
   {
   alert("The XML is empty")
@@ -46,8 +46,8 @@ if (window.ActiveXObject)
   return false
   }
  // XSL:
- var xsltxt
- xsltxt=document.getElementById("xsltcode").value
+ var xsltxt;
+ xsltxt=document.getElementById("xsltcode").innerHTML;
  if (xsltxt=="")
   {
   alert("The XSLT is empty")
@@ -71,7 +71,7 @@ else if (document.implementation && document.implementation.createDocument)
  // Mozilla
  // XML:
  var xmltxt
- xmltxt=document.getElementById("xmlcode").value
+ xmltxt=document.getElementById("xmlcode").innerHTML
  if (xmltxt=="")
   {
   alert("The XML is empty")
@@ -88,7 +88,7 @@ else if (document.implementation && document.implementation.createDocument)
  // XSL:
  var xsltPrs=new XSLTProcessor();
  var xsltxt
- xsltxt=document.getElementById("xsltcode").value
+ xsltxt=document.getElementById("xsltcode").innerHTML
  if (xsltxt=="")
   {
   alert("The XSLT is empty")
