@@ -14,7 +14,7 @@ aside{width:20%;!important}
 #side-bar a{text-decoration: none;display: block;padding:3px 5px;color: indigo;font-size: 1.3em;font-weight: 500;margin:5px 0}
 #side-bar a.active-select{background-color: #04AA6D;color: white;}
 #side-bar a:hover:not(.active-select) {background-color: #555;color: white;}
-#topic {display:block;margin-right: 25%;margin-top:5%;overflow-y: scroll;overflow-x: hidden;padding: 20px;}
+#topic {display:block;width: 78%;float: left;;overflow-y: scroll;overflow-x: hidden;padding: 20px;}
 #page-topic{}
 .focus-point{font-weight: bold;background-color: black;color: yellow;}
 .intensed{font-style:italic}
