@@ -2,7 +2,7 @@
 body {margin:30px;padding: .3em 0.15em;font-family:"Amiri", serif!important;background-color:#ebe1e1}
 #SideBar,#HeaderMid {display:none;}
 #main {width:100%!important}
-asisde{width:20%;!important}
+aside{width:20%;!important}
 #page-G-Chr{padding: .3em 0.1em;background-color:white;height:auto;margin:10px 0;justify-content: space-between;}
 #page-G-Chr .tpc-hdr {background-color: black;margin-right: 20%;margin-left: 2%;padding:10px;color: white;position:fixed;width: 76%;z-index: 5;top: 0;}
 #page-G-Chr .tpc-hdr h1{font-family:inherit;}
