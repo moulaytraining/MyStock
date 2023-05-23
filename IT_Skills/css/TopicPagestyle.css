@@ -50,7 +50,7 @@ a.link-txt {color:rgb(247, 201, 37); text-decoration: none;font-weight: 600;font
 #sec-1 img {border: blue solid 4px;}
 .fa-hand-point-left{font-size:40px;color:yellow;margin: .3em;}
 .fa-arrow-down{font-size:50px;color:red;margin: .2em;}
-.fa, .far, .fas {font-family: "Font Awesome 5 Free"!important;}
+.fa, .far, .fas {font-family: "Font Awesome 5 Free";}
 @media (max-width:600px){#page-topic,.page-sec{display:block;}}
 @media screen and (max-width: 700px) {#side-bar {width: 100%;height: auto;position: relative;}
                                       #side-bar a {float: left;}}
