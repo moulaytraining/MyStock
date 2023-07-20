@@ -10,7 +10,7 @@ h4 {margin: auto;padding: 5px;}
 .row {margin: 0;display: flex;flex-direction: row;flex-wrap: wrap;background-color: gray;}
 .row,.row > .column {padding: 8px;}
 .row:after {content: "";display: table;clear: both;}
-.column {float: left;width:32.5%;display: none;height:250px;}
+.column {float: left;width:32.5%;display: block;height:250px;}
 .content {display: flex;background-color: white;padding: 5px;width: 100%;height: 100%;border: solid blue 5px;flex-direction: column;justify-content: space-between;}
 .content a{text-decoration: none;}
 .content h4 {text-align: center;padding: 10px;}
