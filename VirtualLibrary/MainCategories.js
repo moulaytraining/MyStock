@@ -17,7 +17,7 @@ function ShowCategory(){
   
 const catLinks = document.querySelectorAll("article > div.main > div.row > div > div > button");
 const getCategory = e => {
-  var classFile='https://moulaytraining.github.io/MyStock/htmls/'+e.target.className+'.html';
+  var classFile='https://moulaytraining.github.io/MyStock/VirtualLibrary/'+e.target.className+'.html';
   var className=e.target.innerText;
   console.log('Hello'); 
   console.log(classFile,className); 
