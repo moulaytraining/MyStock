@@ -22,7 +22,7 @@ const getCategory = e => {
   console.log('Hello'); 
   console.log(classFile,className); 
   var myElem=document.querySelector('.main');
-  //loadElement(myElem,classFile);
+  loadElement(myElem,classFile);
 }
 for (let catLink of catLinks) {
   catLink.addEventListener("click", getCategory);
