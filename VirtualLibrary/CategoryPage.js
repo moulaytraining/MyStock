@@ -57,3 +57,5 @@ var current = document.getElementsByClassName("btn active")[0];
 current.className=current.className.replace(" active", ""); 
 elem.className += " active"; 
 } 
+filterSelection('all','');
+viewKinds(); 
