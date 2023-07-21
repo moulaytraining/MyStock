@@ -79,7 +79,5 @@ function ShowCategory(elem){
   console.log('Hello'); 
   console.log(classFile,className); 
   var myElem=document.querySelector('.main');
-  loadElement(myElem,classFile);
-  setTimeout(filterSelection("all",""), 5000);
-  setTimeout(viewKinds() , 5000);  
+  loadElement(myElem,classFile); 
 }
