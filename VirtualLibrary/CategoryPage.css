@@ -11,9 +11,9 @@ h1, h2, h4 {text-transform: capitalize;word-break: break-all;}
 .content h4 {text-align: center;padding: 8px;}
 .row {margin: 0;}
 .row,.row > .column {padding: 8px;}
-.column {float: left;width:32.5%;display: none; }
+.column {float: left;width:32.5%;display: none;height: 450px; }
 .row:after {content: "";display: table;clear: both;}
-.content {background-color: white;padding: 10px;max-width:90%;}
+.content {background-color: white;padding: 10px;height: 100%;}
 .entry-item {height:300px;}
 .entry-kind {position: relative;top: 56px;left: -22px;color: #e8e83c;background-color: #0f16ae;padding: 7px;font-size: 14px;}
 .show {display: block;}
