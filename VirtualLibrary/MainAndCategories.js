@@ -80,5 +80,5 @@ function ShowCategory(elem){
   var myElem=document.querySelector('.main');
   loadElement(myElem,classFile);
   setTimeout(filterSelection('all'), 5000);
-  setTimeout(viewKinds(); , 5000);  
+  setTimeout(viewKinds() , 5000);  
 }
