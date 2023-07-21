@@ -74,7 +74,7 @@ current.className=current.className.replace(" active", "");
 elem.className += " active"; 
 } 
 function ShowCategory(elem){
-  var classFile='https://moulaytraining.github.io/MyStock/VirtualLibrary/'+elem.className+'.html';
+  var classFile='https://moulaytraining.github.io/MyStock/VirtualLibrary/'+elem.className+'/'+elem.className+'1.html';
   var className=elem.innerText;
   console.log('Hello'); 
   console.log(classFile,className); 
