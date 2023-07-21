@@ -43,7 +43,7 @@ arr2 = name.split(" "); for (i = 0; i < arr2.length; i++) {
   element.className = arr1.join(" "); 
 } 
 function viewKinds(){
-var myRow=document.querySelector('body> div >div.row');
+var myRow=document.querySelector('article .main .row');
 var entriesCount=myRow.children.length-1;
 var kindAbbr,kindName; 
 var counter=0;
@@ -80,6 +80,6 @@ function ShowCategory(elem){
   console.log(classFile,className); 
   var myElem=document.querySelector('.main');
   loadElement(myElem,classFile);
-  setTimeout(filterSelection('all'), 5000);
+  setTimeout(filterSelection("all",""), 5000);
   setTimeout(viewKinds() , 5000);  
 }
