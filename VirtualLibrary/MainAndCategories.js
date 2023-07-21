@@ -52,7 +52,7 @@ var myBtns=document.querySelector("#myBtnContainer");
 var myElem;
     for (let index = 0; index <entriesCount ; index++) {
         kindAbbr=myRow.children[index].classList.item(1);
-        kindName=myRow.children[index].querySelector('span').innerText; 
+        kindName=myRow.children[index].querySelector('article .main .row span').innerText; 
         if (myCheckList.indexOf(kindAbbr)==-1) {
             myCheckList.push(kindAbbr);  
             myElem=document.createElement("button");
