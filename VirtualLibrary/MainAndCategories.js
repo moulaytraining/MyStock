@@ -80,6 +80,6 @@ function ShowCategory(elem){
   console.log(classFile,className); 
   var myElem=document.querySelector('.main');
   loadElement(myElem,classFile);
-  filterSelection('all'); 
-  viewKinds(); 
+  setTimeout(filterSelection('all'), 5000);
+  setTimeout(viewKinds(); , 5000);  
 }
