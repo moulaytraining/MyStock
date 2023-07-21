@@ -79,6 +79,5 @@ function ShowCategory(elem){
   console.log('Hello'); 
   console.log(classFile,className); 
   var myElem=document.querySelector('.main');
-  loadElement(myElem,classFile); 
-   viewKinds();
+  loadElement(myElem,classFile);  
 }
