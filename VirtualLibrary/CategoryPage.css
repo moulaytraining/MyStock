@@ -11,7 +11,7 @@ h1, h2, h4 {text-transform: capitalize;}
 article .main .row .column  h4{font-size: 14px;text-decoration: none;text-align: center;padding: 8px;background-color: black;height: 25%;color: gold;display:flex;align-items: center;justify-content: center;}
 .row {margin: 0;}
 .row,.row > .column {padding: 20px;}
-.column {float: left;width:32.5%;display: none;height: 390px; }
+.column {float: left;width:32.5%;display: block;height: 390px; }
 .row:after {content: "";display: table;clear: both;}
 .content {background-color: white;height: 100%;}
 .entry-item {height:75%;}
