@@ -7,7 +7,8 @@ if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
 if (c!="") {console.log(c);btnClick(elem);
 }
 } 
-function w3AddClass(element, name) { var i, arr1, arr2; 
+function w3AddClass(element, name) { 
+  var i, arr1, arr2; 
 arr1 = element.className.split(" "); 
 arr2 = name.split(" "); 
 for (i = 0; i < arr2.length; i++) { 
