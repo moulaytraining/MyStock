@@ -71,8 +71,8 @@ var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 var current = document.getElementsByClassName("btn active")[0];
 current.className=current.className.replace(" active", ""); 
-elem.className += " active"; } 
-function ShowCategory(){  
+elem.className += " active"; 
+} 
 const catLinks = document.querySelectorAll("article > div.main > div.row > div > div > button");
 const getCategory = e => {
   var classFile='https://moulaytraining.github.io/MyStock/VirtualLibrary/'+e.target.className+'.html';
@@ -85,5 +85,3 @@ const getCategory = e => {
 for (let catLink of catLinks) {
   catLink.addEventListener("click", getCategory);
 }
-} 
-ShowCategory(); 
