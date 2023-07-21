@@ -41,6 +41,30 @@ arr2 = name.split(" "); for (i = 0; i < arr2.length; i++) {
 } 
   element.className = arr1.join(" "); 
 } 
+function viewKinds(){
+var myRow=document.querySelector('body> div >div.row');
+var entriesCount=myRow.children.length-1;
+var kindAbbr,kindName; 
+var counter=0;
+var myCheckList=[];  
+var myBtns=document.querySelector("#myBtnContainer");
+
+var myElem;
+    for (let index = 0; index <entriesCount ; index++) {
+        kindAbbr=myRow.children[index].classList.item(1);
+        kindName=myRow.children[index].querySelector('span').innerText; 
+        if (myCheckList.indexOf(kindAbbr)==-1) {
+            myCheckList.push(kindAbbr);  
+            myElem=document.createElement("button");
+            myElem.setAttribute("class", "btn");
+            myElem.setAttribute("onclick", "filterSelection('"+kindAbbr+"',this)");
+            myElem.innerHTML=kindName;
+            myBtns.appendChild(myElem);            
+        }  
+        counter+=1;
+    } 
+console.log(myCheckList);
+}
 function btnClick(elem){
 console.log(elem);
 var btnContainer = document.getElementById("myBtnContainer");
