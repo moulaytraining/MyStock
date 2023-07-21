@@ -80,4 +80,5 @@ function ShowCategory(elem){
   console.log(classFile,className); 
   var myElem=document.querySelector('.main');
   loadElement(myElem,classFile); 
+   viewKinds();
 }
