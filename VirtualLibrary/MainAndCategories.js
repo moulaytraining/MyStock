@@ -13,6 +13,7 @@ var myElem=document.querySelector('.main');
 var myHtmlFile="https://moulaytraining.github.io/MyStock/VirtualLibrary/MainCategories.html";
 loadElement(myElem,myHtmlFile);
 }
+mainPageData(); 
 function filterSelection(c,elem) {
 var x, i; x = document.getElementsByClassName("column"); 
 if (c == "all") c = ""; 
@@ -48,7 +49,6 @@ var kindAbbr,kindName;
 var counter=0;
 var myCheckList=[];  
 var myBtns=document.querySelector("#myBtnContainer");
-
 var myElem;
     for (let index = 0; index <entriesCount ; index++) {
         kindAbbr=myRow.children[index].classList.item(1);
@@ -85,4 +85,5 @@ const getCategory = e => {
 for (let catLink of catLinks) {
   catLink.addEventListener("click", getCategory);
 }
-}
+} 
+ShowCategory(); 
