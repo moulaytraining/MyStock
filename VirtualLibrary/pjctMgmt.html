@@ -220,6 +220,7 @@
 </div>
 </body>
 <script>
+  setTimeout(()=> {
   var myRow=document.querySelector('article .main .row');
 var entriesCount=myRow.children.length-1;
 var kindAbbr,kindName; 
@@ -240,5 +241,5 @@ var myElem;
         }  
         counter+=1;
     } 
-console.log(myCheckList);
+console.log(myCheckList)},3000);
 </script>
