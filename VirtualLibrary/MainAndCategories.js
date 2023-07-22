@@ -23,6 +23,20 @@ function loadElement(element,file) {
       console.log(error);
     });
 }
+function changePage(elem) {
+    const pageDiv=document.querySelector('.main'); 
+    var currentPage=document.querySelector('.pagination-item.active'); 
+    currentPage.classList.remove('active');
+    elem.classList.add("active");
+    loadPageData("pjctMgmt/pjctMgmt"+elem.innerHTML); 
+      waitPage();
+    }
+    function waitPage() {  
+  window.onload= function(){
+console.log("The page has been loaded:"); 
+       filterSelection('all','');
+   viewKinds();
+  }
 function filterSelection(c,elem) {
 var x, i; x = document.getElementsByClassName("column"); 
 if (c == "all") c = ""; 
