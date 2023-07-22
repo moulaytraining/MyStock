@@ -13,7 +13,9 @@ function changePage(elem) {
     var currentPage=document.querySelector('.pagination-item.active'); 
     currentPage.classList.remove('active');
     elem.classList.add("active");
-    loadPageData("pjctMgmt/pjctMgmt"+elem.innerHTML);
+    loadPageData("pjctMgmt/pjctMgmt"+elem.innerHTML); 
+       filterSelection('all','');
+   viewKinds(); 
 }
 function loadPageData(path){
     var myElem=document.querySelector('.main');
