@@ -8,18 +8,6 @@ function addPagination(elemSelector,pagesCount) {
     paginationDiv.querySelectorAll('.pagination-item')[0].classList.add("active");
     
 }
-function changePage(elem) {
-    const pageDiv=document.querySelector('.main'); 
-    var currentPage=document.querySelector('.pagination-item.active'); 
-    currentPage.classList.remove('active');
-    elem.classList.add("active");
-    loadPageData("pjctMgmt/pjctMgmt"+elem.innerHTML); 
-  window.onload= function(){
-console.log("The page has been loaded:"); 
-       filterSelection('all','');
-   viewKinds();  
-}
-}
 function loadPageData(path){
     var myElem=document.querySelector('.main');
     var myHtmlFile="https://moulaytraining.github.io/MyStock/VirtualLibrary/"+path+".html";
