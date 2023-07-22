@@ -8,9 +8,9 @@ function loadElement(element,file) {
       console.log(error);
     });
 }
-function mainPageData(){
+function loadPageData(path){
 var myElem=document.querySelector('.main');
-var myHtmlFile="https://moulaytraining.github.io/MyStock/VirtualLibrary/MainCategories.html";
+var myHtmlFile="https://moulaytraining.github.io/MyStock/VirtualLibrary/"+path+".html";
 loadElement(myElem,myHtmlFile);
 } 
 function filterSelection(c,elem) {
