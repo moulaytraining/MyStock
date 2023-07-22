@@ -13,7 +13,6 @@ var myElem=document.querySelector('.main');
 var myHtmlFile="https://moulaytraining.github.io/MyStock/VirtualLibrary/MainCategories.html";
 loadElement(myElem,myHtmlFile);
 } 
-//mainPageData();
 function filterSelection(c,elem) {
 var x, i; x = document.getElementsByClassName("column"); 
 if (c == "all") c = ""; 
