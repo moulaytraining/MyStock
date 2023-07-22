@@ -15,12 +15,11 @@ loadElement(myElem,myHtmlFile);
 } 
 function filterSelection(c,elem) {
 var x, i; x = document.getElementsByClassName("column"); 
-if (c == "all") c = ""; 
+//if (c == "all") c = ""; 
 for (i = 0; i < x.length; i++) { w3RemoveClass(x[i], "show"); 
 if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show"); 
 }  
-btnClick(elem);
-//if (c!="") {console.log(c);}
+if (c!="") {btnClick(elem);}
 } 
 function w3AddClass(element, name) { 
   var i, arr1, arr2; 
