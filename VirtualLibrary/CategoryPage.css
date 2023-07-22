@@ -1,11 +1,6 @@
 * {box-sizing: border-box;}
 body {background-color: #408595;padding: 20px;font-family: Arial;}
-.main {max-width: 1200px;margin: auto;}
-.topnav { overflow: hidden; background-color: #333; } 
-.topnav a {margin:0 5px; float: left; display: block; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px; } 
-.topnav a.active { background-color: #04AA6D; color: white; }
-.topnav a:hover, .topnav a:active { background-color: #86fc44; color: black; } 
-.post-body a:not(.ibtn):hover {color: maroon!important;text-decoration: underline;}
+.main {max-width: 1200px;margin: auto;} 
 h2 {font-size: 40px;}
 h4 {margin: auto;}
 .post-body h4 {font-size: 16px;text-decoration: none;}
