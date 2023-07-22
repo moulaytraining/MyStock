@@ -1,3 +1,25 @@
+function addPagination(elemSelector,pagesCount) {
+    const paginationDiv=document.querySelector(elemSelector); 
+    let htmlString=""; 
+    for (let index = 1; index <= pagesCount; index++) {
+        htmlString += `<div class="pagination-item" onclick="changePage(this)">${index}</div>`;
+    }
+    paginationDiv.innerHTML=htmlString;
+    paginationDiv.querySelectorAll('.pagination-item')[0].classList.add("active");
+    
+}
+function changePage(elem) {
+    const pageDiv=document.querySelector('.main'); 
+    var currentPage=document.querySelector('.pagination-item.active'); 
+    currentPage.classList.remove('active');
+    elem.classList.add("active");
+    loadPageData("pjctMgmt/pjctMgmt"+elem.innerHTML);
+}
+function loadPageData(path){
+    var myElem=document.querySelector('.main');
+    var myHtmlFile="https://moulaytraining.github.io/MyStock/VirtualLibrary/"+path+".html";
+    loadElement(myElem,myHtmlFile);
+} 
 function loadElement(element,file) { 
   fetch(file)
     .then(response => response.text())
@@ -8,11 +30,6 @@ function loadElement(element,file) {
       console.log(error);
     });
 }
-function loadPageData(path){
-var myElem=document.querySelector('.main');
-var myHtmlFile="https://moulaytraining.github.io/MyStock/VirtualLibrary/"+path+".html";
-loadElement(myElem,myHtmlFile);
-} 
 function filterSelection(c,elem) {
 var x, i; x = document.getElementsByClassName("column"); 
 if (c == "all") c = ""; 
