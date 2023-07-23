@@ -2,7 +2,7 @@ function addPagination(elemSelector,pagesCount) {
     const paginationDiv=document.querySelector(elemSelector); 
     let htmlString=""; 
     for (let index = 1; index <= pagesCount; index++) {
-        htmlString += `<div class="pagination-item" onclick="changePage(this)">${index}</div>`;
+        htmlString += `<div class="pagination-item" onclick="changePage(this);waitPage();">${index}</div>`;
     }
     paginationDiv.innerHTML=htmlString;
     paginationDiv.querySelectorAll('.pagination-item')[0].classList.add("active");
@@ -29,12 +29,14 @@ function changePage(elem) {
     currentPage.classList.remove('active');
     elem.classList.add("active");
     loadPageData("pjctMgmt/pjctMgmt"+elem.innerHTML); 
+    } 
+function waitPage(){    
 window.onload= function(){
    viewKinds();
        filterSelection('all','');
 console.log("The page has been loaded:"); 
-  };
-    } 
+  }
+}
 function filterSelection(c,elem) {
 var x, i; x = document.getElementsByClassName("column"); 
 if (c == "all") c = ""; 
