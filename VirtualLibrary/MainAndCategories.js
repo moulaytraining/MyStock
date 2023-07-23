@@ -21,8 +21,7 @@ function loadElement(element,file) {
     })
     .catch(error => {
       console.log(error);
-    });
-      waitPage();
+    }); 
 }
 function changePage(elem) {
     const pageDiv=document.querySelector('.main'); 
@@ -30,14 +29,12 @@ function changePage(elem) {
     currentPage.classList.remove('active');
     elem.classList.add("active");
     loadPageData("pjctMgmt/pjctMgmt"+elem.innerHTML); 
-    }
-function waitPage() {  
 window.onload= function(){
    viewKinds();
        filterSelection('all','');
 console.log("The page has been loaded:"); 
-  }
-}
+  };
+    } 
 function filterSelection(c,elem) {
 var x, i; x = document.getElementsByClassName("column"); 
 if (c == "all") c = ""; 
