@@ -2,7 +2,7 @@ function addPagination(elemSelector,pagesCount) {
     const paginationDiv=document.querySelector(elemSelector); 
     let htmlString=""; 
     for (let index = 1; index <= pagesCount; index++) {
-        htmlString += `<div class="pagination-item" onclick="changePage(this);filterSelection('all','');viewKinds();">${index}</div>`;
+        htmlString += `<div class="pagination-item" onclick="changePage(this);waitPage;">${index}</div>`;
     }
     paginationDiv.innerHTML=htmlString;
     paginationDiv.querySelectorAll('.pagination-item')[0].classList.add("active");
