@@ -31,12 +31,13 @@ function changePage(elem) {
     loadPageData("pjctMgmt/pjctMgmt"+elem.innerHTML); 
       waitPage();
     }
-    function waitPage() {  
-  window.onload= function(){
+function waitPage() {  
+window.onload= function(){
 console.log("The page has been loaded:"); 
        filterSelection('all','');
    viewKinds();
   }
+}
 function filterSelection(c,elem) {
 var x, i; x = document.getElementsByClassName("column"); 
 if (c == "all") c = ""; 
