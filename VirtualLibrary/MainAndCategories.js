@@ -33,8 +33,8 @@ function changePage(elem) {
     }
 function waitPage() {  
 window.onload= function(){
-       filterSelection('all','');
    viewKinds();
+       filterSelection('all','');
 console.log("The page has been loaded:"); 
   }
 }
