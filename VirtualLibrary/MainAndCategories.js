@@ -2,7 +2,7 @@ function addPagination(elemSelector,pagesCount) {
     const paginationDiv=document.querySelector(elemSelector); 
     let htmlString=""; 
     for (let index = 1; index <= pagesCount; index++) {
-        htmlString += `<div class="pagination-item" onclick="changePage(this);waitPage();">${index}</div>`;
+        htmlString += `<div class="pagination-item" onclick="changePage(this);filterSelection('all','');viewKinds();">${index}</div>`;
     }
     paginationDiv.innerHTML=htmlString;
     paginationDiv.querySelectorAll('.pagination-item')[0].classList.add("active");
@@ -32,8 +32,7 @@ function changePage(elem) {
     } 
 function waitPage(){    
 window.onload= function(){
-   viewKinds();
-       filterSelection('all','');
+       filterSelection('all','');viewKinds();
 console.log("The page has been loaded:"); 
   }
 }
