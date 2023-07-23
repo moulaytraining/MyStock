@@ -30,12 +30,12 @@ function changePage(elem) {
     currentPage.classList.remove('active');
     elem.classList.add("active");
     loadPageData("pjctMgmt/pjctMgmt"+elem.innerHTML); 
+       filterSelection('all','');
+   viewKinds();
     }
 function waitPage() {  
 window.onload= function(){
 console.log("The page has been loaded:"); 
-       filterSelection('all','');
-   viewKinds();
   }
 }
 function filterSelection(c,elem) {
