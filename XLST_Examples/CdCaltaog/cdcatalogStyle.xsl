@@ -3,6 +3,7 @@
 <xsl:template  match="/">
 <html>
 <body>
+  <link rel="stylesheet" href="https://moulaytraining.github.io/MyStock/XLST_Examples/CdCaltaog/cdcatalog.css"/>
 <h2>My  CD Collection</h2>
 <table>
 <tr>
