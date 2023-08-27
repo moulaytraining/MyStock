@@ -2,7 +2,7 @@ function GetFiles(){
   var myTextElem1, myTextElem2,file,text; 
   
   myTextElem1 = document.querySelector('#xmlcode');
-  file="https://moulaytraining.github.io/MyStock/IT_Skills/xmls/cdcatalog.xml";
+  file="https://moulaytraining.github.io/MyStock/XLST_Examples/CdCaltaog/cdcatalog.xml";
     await fetch(file)
     .then((response) => response.text())
     .then((text) => {
