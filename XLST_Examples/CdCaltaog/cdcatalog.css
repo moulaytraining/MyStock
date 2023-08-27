@@ -1,5 +1,5 @@
 body {margin: 10px;background-color:cornsilk;padding: 25px;}
 h2 {color:white;background-color:black;height:50px;text-align: center;padding: 18px 0 1px;}
 tbody {margin: 0 auto;background-color:skyblue;}
-table {border-collapse: collapse;border-block-color: red;}
+table {border-collapse:collapse;border-block-color: red;}
 th,td {padding:8px;}
