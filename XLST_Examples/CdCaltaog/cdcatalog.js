@@ -2,7 +2,7 @@ async function transformxml(){
  var xmltxt, xsltxt,file,text; 
   
   myTextElem1 = document.querySelector('#xmlcode');
-  file="https://moulaytraining.github.io/MyStock/IT_Skills/xmls/cdcatalog.xml";
+  file="https://moulaytraining.github.io/MyStock/XLST_Examples/CdCaltaog/cdcatalog.xml";
     await fetch(file)
     .then((response) => response.text())
     .then((text) => {
@@ -10,7 +10,7 @@ async function transformxml(){
     });  
   myTextElem1.style.display="none";
   myTextElem2 =  document.querySelector('#xsltcode');
-   file="https://moulaytraining.github.io/MyStock/IT_Skills/xslts/cdcatalogStyle.xml";
+   file="https://moulaytraining.github.io/MyStock/XLST_Examples/CdCaltaog/cdcatalogStyle.xml";
     await fetch(file)
     .then((response) => response.text())
     .then((text) => {
