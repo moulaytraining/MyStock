@@ -11,7 +11,7 @@ function GetFiles(){
   myTextElem1.style.display="none";
 
   myTextElem2 =  document.querySelector('#xsltcode');
-   file="https://moulaytraining.github.io/MyStock/IT_Skills/xslts/cdcatalogStyle.txt";
+   file="https://moulaytraining.github.io/MyStock/XLST_Examples/CdCaltaog/cdcatalogStyle.xsl";
     await fetch(file)
     .then((response) => response.text())
     .then((text) => {
