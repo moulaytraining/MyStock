@@ -1,5 +1,5 @@
 function loadFiles() {
-    var files = ["https://moulaytraining.github.io/MyStock/css/Create Read XML file.css", "https://moulaytraining.github.io/MyStock/xmls/employee.xml"];
+    var files = ["https://moulaytraining.github.io/MyStock/css/Read%20XML%20file.css", "https://moulaytraining.github.io/MyStock/xmls/employee.xml"];
     document.getElementById("post-style").innerHTML = loadXMLDoc(files[0]);
     var xmlDoc = loadXMLDoc(files[1]);
     empDetails(xmlDoc);
@@ -11,7 +11,7 @@ function loadXMLDoc(filePath) {
         // Request finished and response
         // is ready and Status is "OK"
         if (this.readyState == 4 && this.status == 200) {
-            return (xml.responseXML);
+            return (this.responseXML);
         }
     };
     xmlhttp.open("GET", filePath, true);
