@@ -1,5 +1,5 @@
 function loadFiles() {
-    var files = ["https://moulaytraining.github.io/MyStock/css/Read%20XML%20file.css", "https://moulaytraining.github.io/MyStock/xmls/employee.xml"];
+    var files = ["https://moulaytraining.github.io/MyStock/css/Read XML file.css", "https://moulaytraining.github.io/MyStock/xmls/employee.xml"];
     document.getElementById("post-style").innerHTML = loadXMLDoc(files[0]);
     var xmlDoc = loadXMLDoc(files[1]);
     empDetails(xmlDoc);
