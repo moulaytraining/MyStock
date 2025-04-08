@@ -2,9 +2,9 @@ function loadTextFiles(){
 	var file="https://moulaytraining.github.io/MyStock/scripts/employee.js"; 
     textHttpRequest(file,getTextData);  
 }
-function getTextData(xmlDoc){
+function getTextData(xml){
 	var i;
-			//var xmlDoc = xml.responseXML;
+			var xmlDoc = xml.responseXML;
 			var table =
 				`<tr><th>Firstname</th><th>Lastname</th>
 					<th>Title</th><th>Division</th>
