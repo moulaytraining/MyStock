@@ -6,6 +6,7 @@ function showData() {
 	loadXmlDoc(fileUrl,tabulateXmlList,childTag,targetTags,targetElemId);
 }
 function loadTextFiles(){
+	var getTextData;
 	var file="https://moulaytraining.github.io/MyStock/scripts/employee.js"; 
     	textHttpRequest(file,getTextData);  
 }
