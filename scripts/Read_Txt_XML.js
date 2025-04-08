@@ -5,6 +5,7 @@ function loadTextFiles(){
 function getTextData(xml){
 	var i;
 			var xmlDoc = xml.responseXML;
+	console.log(xmlDoc):
 			var table =
 				`<tr><th>Firstname</th><th>Lastname</th>
 					<th>Title</th><th>Division</th>
