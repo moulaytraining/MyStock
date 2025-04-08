@@ -9,6 +9,16 @@ function textHttpRequest(file,callBack) {
   xhttp.open("GET", file, true);
   xhttp.send();
 }
+function loadTextDoc(fileUrl,callBack,targetElemId) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      callBack(this,targetElemId);
+    }
+  };
+  xhttp.open("GET", fileUrl, true);
+  xhttp.send();
+}
 function loadXmlDoc(fileUrl,callBack,childTag,targetTags,targetElemId) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
