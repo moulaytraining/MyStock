@@ -1,6 +1,6 @@
 function loadTextFiles(){
 	var file="https://moulaytraining.github.io/MyStock/scripts/employee.js"; 
-    textHttpRequest(file,getTextData);  
+    	textHttpRequest(file,getTextData);  
 }
 function getTextData(xml){
 	var i;
