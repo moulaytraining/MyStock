@@ -1,10 +1,3 @@
-function showData() {
-	var fileUrl="https://moulaytraining.github.io/MyStock/xmls/book_catalog.xml"; 
-	var childTag="book";
-	var targetTags=["title","author","genre"];
-	var targetElemId="demo";
-	loadXmlDoc(fileUrl,tabulateXmlList,childTag,targetTags,targetElemId);
-}
 function loadTextFiles(){
 	var getTextData;
 	var file="https://moulaytraining.github.io/MyStock/scripts/employee.js"; 
