@@ -1,8 +1,8 @@
-function getXml(file,callBack) {
+function getXml(file,callBack,arg1) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      callBack(this); 
+      callBack(this,arg1); 
     }
   };
   xhttp.open("GET", file, true);
