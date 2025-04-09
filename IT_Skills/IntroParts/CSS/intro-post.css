@@ -2,25 +2,27 @@
             direction: rtl !important;
         }
 
-        div#intro-post-header {
+          div#intro-post-header {
             background-color: beige !important;
             display: flex !important;
             overflow: hidden !important;
+            padding: 10px !important;
         }
 
         #intro-post-header strong {
+            max-width: 60% !important;
             font-size: large !important;
             text-align: center !important;
-            margin: auto 20px !important;
-            padding: 10px !important;
+            margin: auto 10px !important;
+            padding: 8px !important;
             color: darkblue !important;
         }
 
         #intro-post-header img {
             width: 100% !important;
-            max-width: 50% !important;
+            max-width: 40% !important;
             margin: auto !important;
-            padding: 10px !important;
+            padding: 8px !important;
             overflow: hidden !important;
         }
 
