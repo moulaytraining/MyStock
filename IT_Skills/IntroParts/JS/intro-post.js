@@ -25,9 +25,9 @@ function getIntroPostHtml(fileData,arg1){
       document.querySelectorAll("#intro-post-lst01>div>ol>li")[i].innerHTML="<b>"+bldText+"</b>"+normText;      
     }  
     document.querySelector("#post-Para p").innerText=child.getElementsByTagName("p")[1].childNodes[0].nodeValue;
-    // try{
-    //     document.querySelector("#intro-post-lst01 > div > ol").removeChild(document.querySelector("#HTML202"));
-    // }
-    // catch(err){}
+    try{
+        document.querySelector("#intro-post-lst01 > div > ol").removeChild(document.querySelector("#HTML202"));
+    }
+    catch(err){}
 }
 function getIntroPostStyle(fileData,arg1){document.getElementById("intro-post-style").innerText = fileData.responseText;}
