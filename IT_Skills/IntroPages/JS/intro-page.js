@@ -1,13 +1,14 @@
 function introPageData(file,pageID) {
+  console.log(pageID);
   getXml(file,populateIntroPage,arg1) ;
 }
 
 function populateIntroPage(xml,arg1){
   var i;
   var xmlDoc = xml.responseXML;
-  console.log(arg1);
   var child=xmlDoc.querySelector("intro-page[id=arg1]");
   var imgSrc=child.getElementsByTagName("img")[0].childNodes[0].nodeValue; 
+  console.log(imgSrc);
   document.querySelector("#intro-page-header img").setAttribute("src",imgSrc);
 }
 function getXml(file,callBack,arg1) {
