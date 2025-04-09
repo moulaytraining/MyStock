@@ -1,4 +1,4 @@
-     html {
+  html {
             direction: rtl !important;
         }
 
@@ -47,16 +47,16 @@
 
         #intro-post-lst01.lst-itms {}
 
-        #intro-post-lst01.lst-itms ol {
+        intro-post-lst01>div>ol {
             font-size: 15px !important;
         }
 
-        #intro-post-lst01.lst-itms li {
+        #intro-post-lst01>div>ol>li {
             list-style-type: decimal;
             font-size: 15px !important;
         }
 
-        #intro-post-lst01.lst-itms li b {
+        #intro-post-lst01>div>ol>li b {
             font-size: 17px !important;
         }
 
