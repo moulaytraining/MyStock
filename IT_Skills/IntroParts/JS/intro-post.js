@@ -17,15 +17,15 @@ function getIntroPostHtml(fileData,arg1){
     document.querySelector("#intro-post-header img").setAttribute("src",child.getElementsByTagName("img")[0].childNodes[0].nodeValue);
     document.querySelector("#intro-post-introPara p").innerText=child.getElementsByTagName("p")[0].childNodes[0].nodeValue;
     document.querySelector("#intro-post-lst01 h1").innerText=child.getElementsByTagName("h1")[0].childNodes[0].nodeValue;
-  console.log(document.querySelectorAll("#intro-post-lst01 > div > ol > li").length);
+    //console.log(document.querySelectorAll("#intro-post-lst01 > div > ol > li").length);
     for (i = 0; i < document.querySelectorAll("#intro-post-lst01 > div > ol > li").length; i++) {
       document.querySelectorAll("#intro-post-lst01>div>ol>li b")[i].innerText=child.getElementsByTagName("li-b")[i].childNodes[0].nodeValue; 
       document.querySelectorAll("#intro-post-lst01>div>ol>li")[i].innerText=child.getElementsByTagName("li-text")[i].childNodes[0].nodeValue;      
     }  
     document.querySelector("#post-Para p").innerText=child.getElementsByTagName("p")[1].childNodes[0].nodeValue;
-    try{
-        document.querySelector("#intro-post-lst01 > div > ol").removeChild(document.querySelector("#HTML202"));
-    }
-    catch(err){}
+    // try{
+    //     document.querySelector("#intro-post-lst01 > div > ol").removeChild(document.querySelector("#HTML202"));
+    // }
+    // catch(err){}
 }
 function getIntroPostStyle(fileData,arg1){document.getElementById("intro-post-style").innerText = fileData.responseText;}
