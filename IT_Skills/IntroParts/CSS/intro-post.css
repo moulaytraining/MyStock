@@ -29,6 +29,7 @@
         #intro-post-introPara {
             background-color: lightgray !important;
             padding: 8px !important;
+            margin: 10px !important;
         }
 
         #intro-post-introPara p {
@@ -38,6 +39,7 @@
         #intro-post-lst01 {
             background-color: lightskyblue !important;
             padding: 10px !important;
+            margin: 10px !important;
         }
 
         #intro-post-lst01 h1 {
@@ -64,6 +66,7 @@
         #post-Para {
             background-color: #63f66387 !important;
             padding: 8px !important;
+            margin: 10px !important;
         }
 
         #post-Para p {
