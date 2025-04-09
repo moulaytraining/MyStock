@@ -18,7 +18,7 @@ function populateIntroPage(xml,arg1){
     document.querySelector("#intro-page-header img").setAttribute("src",child.getElementsByTagName("img")[0].childNodes[0].nodeValue);
     document.querySelector("#intro-page-introPara p").innerText=child.getElementsByTagName("p")[0].childNodes[0].nodeValue;
     document.querySelector("#intro-page-toc h1").innerText=child.getElementsByTagName("h1")[0].childNodes[0].nodeValue;
-    console.log(document.querySelectorAll("#toc-links a").length);
+    ///console.log(document.querySelectorAll("#toc-links a").length);
     for (i = 0; i < document.querySelectorAll("#toc-links a").length; i++) {
       document.querySelectorAll("#intro-page-toc a")[i].setAttribute("href",child.getElementsByTagName("a-href")[i].childNodes[0].nodeValue);
       document.querySelectorAll("#intro-page-toc a")[i].innerText=child.getElementsByTagName("a-text")[i].childNodes[0].nodeValue;      
