@@ -11,5 +11,6 @@ function getIntroPostHtml(fileData,arg1){
       document.querySelectorAll("intro-post-lst01.lst-itms li b")[i].innerText=child.getElementsByTagName("li-b")[i].childNodes[0].nodeValue; 
       document.querySelectorAll("#intro-post-lst01.lst-itms li")[i].innerText=child.getElementsByTagName("li-text")[i].childNodes[0].nodeValue;      
     }  
+    document.querySelector("#post-Para p").innerText=child.getElementsByTagName("p")[1].childNodes[0].nodeValue;
 }
 function getIntroPostStyle(fileData,arg1){document.getElementById("intro-post-style").innerText = fileData.responseText;}
