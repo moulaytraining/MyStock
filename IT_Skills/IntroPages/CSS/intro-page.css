@@ -1,0 +1,49 @@
+ html {
+      direction: rtl !important;
+    }
+
+    div#intro-page-header {
+      background-color: beige !important;
+      display: flex !important; 
+      overflow: hidden!important;
+    }
+
+    #intro-page-header strong {
+      font-size: large!important;
+      text-align: center!important;
+      margin: auto 20px !important;
+      padding: 10px !important;
+      color: darkblue !important;
+    }
+
+    #intro-page-header img {
+      width: 100% !important;
+      max-width: 50% !important;
+      margin: auto !important;
+      padding: 10px !important;
+      overflow: hidden!important;
+    }
+    #intro-page-introPara{
+      background-color: lightgray !important;
+      padding:8px!important;  
+    }
+    #intro-page-introPara p{ 
+      font-size:medium!important;
+      text-justify: auto!important;
+    }
+    #intro-page-toc{
+      background-color: lightskyblue !important;
+      padding:10px!important; 
+    }
+    #intro-page-toc h1{
+      font-size:larger!important;
+      font-weight:700!important;
+      color: brown!important;
+    }
+    #toc-links a{
+      font-size:15px!important; 
+    }
+    #toc-links a:hover{
+      color:red!important;
+      text-decoration: underlines!important;
+    }
