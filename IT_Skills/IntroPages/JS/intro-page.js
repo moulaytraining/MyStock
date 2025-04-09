@@ -1,16 +1,3 @@
-function introPageData(file,pageID) {
-  console.log(pageID);
-  getXml(file,populateIntroPage,arg1) ;
-}
-
-function populateIntroPage(xml,arg1){
-  var i;
-  var xmlDoc = xml.responseXML;
-  var child=xmlDoc.getElementsByTagName("intro-page[id='"+arg1+"']")[0];
-  var imgSrc=child.getElementsByTagName("img")[0].childNodes[0].nodeValue; 
-  console.log(imgSrc);
-  document.querySelector("#intro-page-header img").setAttribute("src",imgSrc);
-}
 function getXml(file,callBack,arg1) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -20,4 +7,20 @@ function getXml(file,callBack,arg1) {
   };
   xhttp.open("GET", file, true);
   xhttp.send();
+}
+
+function populateIntroPage(xml,arg1){
+    var i;
+    var xmlDoc = xml.responseXML;  
+    var x = xmlDoc.getElementsByTagName("intro-page");
+    for (i = 0; i < x.length; i++) {if(x[i].getAttribute("id") == arg1){var child=x[i]};}   
+    document.querySelector("#intro-page-header strong").innerText=child.getElementsByTagName("strong")[0].childNodes[0].nodeValue;
+    document.querySelector("#intro-page-header img").setAttribute("src",child.getElementsByTagName("img")[0].childNodes[0].nodeValue);
+    document.querySelector("#intro-page-introPara p").innerText=child.getElementsByTagName("p")[0].childNodes[0].nodeValue;
+    document.querySelector("#intro-page-toc h1").innerText=child.getElementsByTagName("h1")[0].childNodes[0].nodeValue;
+    console.log(document.querySelectorAll("#toc-links a").length);
+    for (i = 0; i < document.querySelectorAll("#toc-links a").length; i++) {
+      document.querySelectorAll("#intro-page-toc a")[i].setAttribute("href",child.getElementsByTagName("a-href")[i].childNodes[0].nodeValue);
+      document.querySelectorAll("#intro-page-toc a")[i].innerText=child.getElementsByTagName("a-text")[i].childNodes[0].nodeValue;      
+    } 
 }
