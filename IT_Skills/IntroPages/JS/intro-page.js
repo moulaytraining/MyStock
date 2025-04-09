@@ -22,7 +22,6 @@ function populateIntroPage(xml,arg1){
     for (i = 0; i < document.querySelectorAll("#toc-links a").length; i++) {
       document.querySelectorAll("#intro-page-toc a")[i].setAttribute("href",child.getElementsByTagName("a-href")[i].childNodes[0].nodeValue);
       document.querySelectorAll("#intro-page-toc a")[i].innerText=child.getElementsByTagName("a-text")[i].childNodes[0].nodeValue;      
-    } 
-    getXml("https://moulaytraining.github.io/MyStock/IT_Skills/IntroPages/CSS/intro-page.css",getIntroPageStyle,"");
+    }  
 }
 function getIntroPageStyle(xml,arg1){document.getElementById("intro-page-style").innerText = xml.responseText;}
