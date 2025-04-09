@@ -18,8 +18,8 @@ function getIntroPostHtml(fileData,arg1){
     document.querySelector("#intro-post-introPara p").innerText=child.getElementsByTagName("p")[0].childNodes[0].nodeValue;
     document.querySelector("#intro-post-lst01 h1").innerText=child.getElementsByTagName("h1")[0].childNodes[0].nodeValue; 
     for (i = 0; i < document.querySelectorAll("#intro-post-lst01.lst-itms li").length; i++) {
-      document.querySelectorAll("intro-post-lst01.lst-itms li b")[i].innerText=child.getElementsByTagName("li-b")[i].childNodes[0].nodeValue; 
-      document.querySelectorAll("#intro-post-lst01.lst-itms li")[i].innerText=child.getElementsByTagName("li-text")[i].childNodes[0].nodeValue;      
+      document.querySelectorAll("#intro-post-lst01>div>ol>li b")[i].innerText=child.getElementsByTagName("li-b")[i].childNodes[0].nodeValue; 
+      document.querySelectorAll("#intro-post-lst01>div>ol>li")[i].innerText=child.getElementsByTagName("li-text")[i].childNodes[0].nodeValue;      
     }  
     document.querySelector("#post-Para p").innerText=child.getElementsByTagName("p")[1].childNodes[0].nodeValue;
     try{
