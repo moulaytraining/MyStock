@@ -32,8 +32,7 @@
         }
 
         #intro-post-introPara p {
-            font-size: medium !important;
-            text-justify: auto !important;
+            font-size: medium !important; 
         }
 
         #intro-post-lst01 {
@@ -68,6 +67,5 @@
         }
 
         #post-Para p {
-            font-size: medium !important;
-            text-justify: auto !important;
+            font-size: medium !important; 
         }
