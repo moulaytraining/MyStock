@@ -1,3 +1,13 @@
+function getFileData(file,callBack,arg1) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      callBack(this,arg1); 
+    }
+  };
+  xhttp.open("GET", file, true);
+  xhttp.send();
+}
 function getIntroPostHtml(fileData,arg1){
     var i;
     var xmlDoc = fileData.responseXML;  
