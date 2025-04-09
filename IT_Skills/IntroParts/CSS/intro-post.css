@@ -70,3 +70,18 @@
         #post-Para p {
             font-size: medium !important; 
         }
+
+      @media screen and (max-width: 600px) {
+        div#intro-post-header,#intro-post-lst01 {
+          float: right !important;
+          display: block !important;
+          clear: both!important;
+        } 
+        #intro-post-header strong {
+          font-size: medium !important;
+        } 
+        #intro-post-header img {
+          width: 100% !important; 
+          height: 100% !important;
+        }
+      }
