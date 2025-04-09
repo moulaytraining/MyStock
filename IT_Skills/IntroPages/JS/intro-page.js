@@ -6,7 +6,7 @@ function introPageData(file,pageID) {
 function populateIntroPage(xml,arg1){
   var i;
   var xmlDoc = xml.responseXML;
-  var child=xmlDoc.querySelector("intro-page[id=arg1]");
+  var child=xmlDoc.getElementsByTagName("intro-page[id=arg1]")[0];
   var imgSrc=child.getElementsByTagName("img")[0].childNodes[0].nodeValue; 
   console.log(imgSrc);
   document.querySelector("#intro-page-header img").setAttribute("src",imgSrc);
