@@ -1,4 +1,4 @@
-function getXml(file,callBack,arg1) {
+function getFileData(file,callBack,arg1) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -9,9 +9,9 @@ function getXml(file,callBack,arg1) {
   xhttp.send();
 }
 
-function populateIntroPage(xml,arg1){
+function getIntroPageHtml(fileData,arg1){
     var i;
-    var xmlDoc = xml.responseXML;  
+    var xmlDoc = fileData.responseXML;  
     var x = xmlDoc.getElementsByTagName("intro-page");
     for (i = 0; i < x.length; i++) {if(x[i].getAttribute("id") == arg1){var child=x[i]};}   
     document.querySelector("#intro-page-header strong").innerText=child.getElementsByTagName("strong")[0].childNodes[0].nodeValue;
@@ -24,4 +24,4 @@ function populateIntroPage(xml,arg1){
       document.querySelectorAll("#intro-page-toc a")[i].innerText=child.getElementsByTagName("a-text")[i].childNodes[0].nodeValue;      
     }  
 }
-function getIntroPageStyle(xml,arg1){document.getElementById("intro-page-style").innerText = xml.responseText;}
+function getIntroPageStyle(fileData,arg1){document.getElementById("intro-page-style").innerText = fileData.responseText;}
