@@ -20,8 +20,9 @@ function getIntroPostHtml(fileData,arg1){
     //console.log(document.querySelectorAll("#intro-post-lst01 > div > ol > li").length);
     for (i = 0; i < document.querySelectorAll("#intro-post-lst01 > div > ol > li").length; i++) {
       console.log(i);
-      document.querySelectorAll("#intro-post-lst01>div>ol>li b")[i].innerText=child.getElementsByTagName("li-b")[i].childNodes[0].nodeValue; 
-      document.querySelectorAll("#intro-post-lst01>div>ol>li")[i].innerText=child.getElementsByTagName("li-text")[i].childNodes[0].nodeValue;      
+      var bldText=child.getElementsByTagName("li-b")[i].childNodes[0].nodeValue; 
+      var normText=child.getElementsByTagName("li-text")[i].childNodes[0].nodeValue;   
+      document.querySelectorAll("#intro-post-lst01>div>ol>li")[i].innerHTML="<b>"+bldText+"</b>"+normText;      
     }  
     document.querySelector("#post-Para p").innerText=child.getElementsByTagName("p")[1].childNodes[0].nodeValue;
     // try{
