@@ -73,6 +73,7 @@
             font-size: larger !important;
             font-weight: 700 !important;
             color: #e61111 !important;
+            align-items: center!important;
         }   
         #post-sec p {
             max-width: 70% !important;
