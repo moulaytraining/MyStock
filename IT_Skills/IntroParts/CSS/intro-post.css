@@ -72,12 +72,12 @@
         #intro-post > div.post-sec > div{
             max-width: 65% !important;
           
-      .post-sec .head-para h1 {
+      #intro-post > div.post-sec > div > h1 {
           font-size: larger !important;
           font-weight: 700 !important;
           color: #e61111 !important; 
       }
-        .post-sec .head-para p { 
+        #intro-post > div.post-sec > div > p { 
             font-size: medium !important; 
         }
         .post-sec > img {
