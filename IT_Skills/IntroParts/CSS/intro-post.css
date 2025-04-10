@@ -72,7 +72,7 @@
         #intro-post > div.post-sec > div{
             max-width: 65% !important;
           
-      #intro-post > div.post-sec > div > h1 {          
+      #intro-post > div.post-sec > div > h1   {
                   font-size: larger !important;
                   font-weight: 700 !important;
                   color: #e61111 !important; 
