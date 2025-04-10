@@ -16,17 +16,17 @@ function getFileData(file,callBack,arg1) {
       document.querySelector("#post-header strong").innerText=child.getElementsByTagName("strong")[0].childNodes[0].nodeValue;
       document.querySelector("#post-header img").setAttribute("src",child.getElementsByTagName("img")[0].childNodes[0].nodeValue);
       document.querySelector("#post-introPara p").innerText=child.getElementsByTagName("p")[0].childNodes[0].nodeValue;
-      document.querySelector("#post-lst01 h1").innerText=child.getElementsByTagName("h1")[0].childNodes[0].nodeValue;
+      document.querySelector(".post-lst h1").innerText=child.getElementsByTagName("h1")[0].childNodes[0].nodeValue;
       //console.log(document.querySelectorAll("#post-lst01 > div > ol > li").length);
-      for (i = 0; i < document.querySelectorAll("#post-lst01 > div > ol > li").length; i++) {
+      for (i = 0; i < document.querySelectorAll(".post-lst > div > ol > li").length; i++) {
         // console.log(i);
         var bldText=child.getElementsByTagName("li-b")[i].childNodes[0].nodeValue; 
         var normText=child.getElementsByTagName("li-text")[i].childNodes[0].nodeValue;   
-        document.querySelectorAll("#post-lst01>div>ol>li")[i].innerHTML="<b>"+bldText+"</b>"+normText;      
+        document.querySelectorAll(".post-lst>div>ol>li")[i].innerHTML="<b>"+bldText+"</b>"+normText;      
       }  
       document.querySelector("#post > div.post-sec > div > p").innerText=child.getElementsByTagName("p")[1].childNodes[0].nodeValue;
       try{
-          document.querySelector("#post-lst01 > div > ol").removeChild(document.querySelector("#HTML202")); 
+          document.querySelector(".post-lst > div > ol").removeChild(document.querySelector("#HTML202")); 
       }
       catch(err){}
   }
