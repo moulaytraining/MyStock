@@ -33,7 +33,15 @@ html {
 #post-introPara p {
     font-size: medium !important; 
 }
+.post-para {
+    background-color: lightgray !important;
+    padding: 8px !important;
+    margin: 10px !important;
+}
 
+.post-para p {
+    font-size: medium !important; 
+}
 .post-o-lst {
     background-color: lightskyblue !important;
     padding: 10px !important;
