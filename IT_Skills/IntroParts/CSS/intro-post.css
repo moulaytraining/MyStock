@@ -68,8 +68,20 @@
             margin: 10px !important;
         }
 
+        #post-sec h1 {
+            max-width: 70% !important;
+            font-size: larger !important;
+            font-weight: 700 !important;
+            color: #e61111 !important;
+        }   
         #post-sec p {
+            max-width: 70% !important;
             font-size: medium !important; 
+        }
+        #post-sec img {
+            margin: auto !important;
+            padding: 8px !important;
+            overflow: hidden !important;
         }
 
       @media screen and (max-width: 600px) {
