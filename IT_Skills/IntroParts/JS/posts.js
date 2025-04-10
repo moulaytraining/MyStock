@@ -24,7 +24,7 @@ function getFileData(file,callBack,arg1) {
         var normText=child.getElementsByTagName("li-text")[i].childNodes[0].nodeValue;   
         document.querySelectorAll(".post-o-lst>div>ol>li")[i].innerHTML="<b>"+bldText+"</b>"+normText;      
       }  
-      document.querySelector("#post > div.post-sec > div > p").innerText=child.getElementsByTagName("p")[1].childNodes[0].nodeValue;
+      document.querySelector(".post-para p").innerText=child.getElementsByTagName("p")[1].childNodes[0].nodeValue;
       try{
           document.querySelector(".post-o-lst > div > ol").removeChild(document.querySelector("#HTML202")); 
       }
