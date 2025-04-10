@@ -61,26 +61,26 @@
             font-size: 17px !important;
         }
 
-        .post-sec {
+       #intro-post > div.post-sec {
             background-color: #63f66387 !important;
             display: flex !important;
             padding: 8px !important;
             margin: 10px !important;
         }
 
-        .post-sec > div{
+        #intro-post > div.post-sec > div{
             max-width: 65% !important;
           
-        .post-sec > div > h1 {
+        #intro-post > div.post-sec > div.head-para > h1 {
             font-size: larger !important;
             font-weight: 700 !important;
             color: #e61111 !important;
             align-items: center!important;
         }   
-        .post-sec > div > p { 
+        #intro-post > div.post-sec > div.head-para > p { 
             font-size: medium !important; 
         }
-        #post-sec > img {
+        .post-sec > img {
             width: 35% !important;
             margin: auto !important;
             padding: 8px !important;
