@@ -63,6 +63,7 @@
 
         #post-sec {
             background-color: #63f66387 !important;
+            display: flex !important;
             padding: 8px !important;
             margin: 10px !important;
         }
