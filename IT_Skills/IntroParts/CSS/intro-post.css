@@ -71,13 +71,13 @@
         #intro-post > div.post-sec > div{
             max-width: 65% !important;
           
-        #intro-post > div.post-sec > div.head-para > h1 {
+        #intro-post > div.post-sec > div > h1 {
             font-size: larger !important;
             font-weight: 700 !important;
             color: #e61111 !important;
             align-items: center!important;
         }   
-        #intro-post > div.post-sec > div.head-para > p { 
+        #intro-post > div.post-sec > div > p { 
             font-size: medium !important; 
         }
         .post-sec > img {
