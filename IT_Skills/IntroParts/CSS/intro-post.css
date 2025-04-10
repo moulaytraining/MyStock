@@ -84,6 +84,7 @@
             width: 35% !important;
             margin: auto !important;
             padding: 8px !important;
+            border: none!important;
             overflow: hidden !important;
         }
 
