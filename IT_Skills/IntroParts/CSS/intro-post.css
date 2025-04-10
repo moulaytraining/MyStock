@@ -61,23 +61,23 @@
             font-size: 17px !important;
         }
 
-        #post-sec {
+        .post-sec {
             background-color: #63f66387 !important;
             display: flex !important;
             padding: 8px !important;
             margin: 10px !important;
         }
 
-        #post-sec > div{
+        .post-sec > div{
             max-width: 65% !important;
           
-        #post-sec > div > h1 {
+        .post-sec > div > h1 {
             font-size: larger !important;
             font-weight: 700 !important;
             color: #e61111 !important;
             align-items: center!important;
         }   
-        #post-sec > div > p { 
+        .post-sec > div > p { 
             font-size: medium !important; 
         }
         #post-sec > img {
