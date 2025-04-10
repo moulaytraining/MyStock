@@ -71,16 +71,16 @@
         #post-sec > div{
             max-width: 65% !important;
           
-        #post-sec h1 {
+        #post-sec > div >h1 {
             font-size: larger !important;
             font-weight: 700 !important;
             color: #e61111 !important;
             align-items: center!important;
         }   
-        #post-sec p { 
+        #post-sec > div >p { 
             font-size: medium !important; 
         }
-        #post-sec img {
+        #post-sec > img {
             width: 35% !important;
             margin: auto !important;
             padding: 8px !important;
