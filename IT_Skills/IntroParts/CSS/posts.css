@@ -34,30 +34,30 @@ html {
     font-size: medium !important; 
 }
 
-.post-lst {
+.post-o-lst {
     background-color: lightskyblue !important;
     padding: 10px !important;
     margin: 10px !important;
 }
 
-.post-lst h1 {
+.post-o-lst h1 {
     font-size: larger !important;
     font-weight: 700 !important;
     color: brown !important;
 }
 
-.post-lst.lst-itms {}
+.post-o-lst.lst-itms {}
 
-.post-lst>div>ol {
+.post-o-lst>div>ol {
     font-size: 15px !important;
 }
 
-.post-lst>div>ol>li {
+.post-o-lst>div>ol>li {
     list-style-type: decimal;
     font-size: 15px !important;
 }
 
-.post-lst>div>ol>li b {
+.post-o-lst>div>ol>li b {
     font-size: 17px !important;
 }
 
