@@ -24,13 +24,13 @@ html {
     overflow: hidden !important;
 }
 
-#post-introPara {
+.post-introPara {
     background-color: lightgray !important;
     padding: 8px !important;
     margin: 10px !important;
 }
 
-#post-introPara p {
+.post-introPara p {
     font-size: medium !important; 
 }
 .post-para {
