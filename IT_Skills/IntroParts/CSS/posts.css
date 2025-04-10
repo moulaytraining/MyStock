@@ -2,14 +2,14 @@ html {
     direction: rtl !important;
 }
 
-  header {
+  #post-header {
     background-color: beige !important;
     display: flex !important;
     overflow: hidden !important;
     padding: 10px !important;
 }
 
-header strong {
+#post-header strong {
     max-width: 70% !important;
     font-size: large !important;
     text-align: center !important;
@@ -18,7 +18,7 @@ header strong {
     color: darkblue !important;
 }
 
-header img { 
+#post-header img { 
     margin: auto !important;
     padding: 8px !important;
     overflow: hidden !important;
