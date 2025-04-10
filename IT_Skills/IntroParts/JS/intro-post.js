@@ -26,8 +26,7 @@ function getIntroPostHtml(fileData,arg1){
     }  
     document.querySelector("#intro-post > div.post-sec > div > p").innerText=child.getElementsByTagName("p")[1].childNodes[0].nodeValue;
     try{
-        document.querySelector("#intro-post-lst01 > div > ol").removeChild(document.querySelector("#HTML202"));
-        document.querySelector("article > div.separator").style.display="none";
+        document.querySelector("#intro-post-lst01 > div > ol").removeChild(document.querySelector("#HTML202")); 
     }
     catch(err){}
 }
