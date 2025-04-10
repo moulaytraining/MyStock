@@ -89,15 +89,15 @@ html {
 }
 
 @media screen and (max-width: 600px) {
-div#post-header,#post-lst01 {
+#post > header,.post-o-lst {
   float: right !important;
   display: block !important;
   clear: both!important;
 } 
-#post-header strong {
+#post > header > strong {
   font-size: medium !important;
 } 
-#post-header img {
+#post > header > img {
   width: 100% !important; 
   height: 100% !important;
 }
