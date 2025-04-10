@@ -76,10 +76,11 @@
             align-items: center!important;
         }   
         #post-sec p {
-            max-width: 70% !important;
+            max-width: 60% !important;
             font-size: medium !important; 
         }
         #post-sec img {
+            width: 40% !important;
             margin: auto !important;
             padding: 8px !important;
             overflow: hidden !important;
