@@ -18,15 +18,15 @@ function getFileData(file,callBack,arg1) {
       document.querySelector(".post-introPara p").innerText=child.getElementsByTagName("p")[0].childNodes[0].nodeValue;
       document.querySelector(".post-o-lst h1").innerText=child.getElementsByTagName("h1")[0].childNodes[0].nodeValue;
       //console.log(document.querySelectorAll("#post-lst01 > div > ol > li").length);
-      for (i = 0; i < document.querySelectorAll(".post-o-lst > ol > li").length; i++) {
+      for (i = 0; i < document.querySelectorAll("#post > div.post-o-lst > ol > li").length; i++) {
         // console.log(i);
         var bldText=child.getElementsByTagName("li-b")[i].childNodes[0].nodeValue; 
         var normText=child.getElementsByTagName("li-text")[i].childNodes[0].nodeValue;   
-        document.querySelectorAll(".post-o-lst>ol>li")[i].innerHTML="<b>"+bldText+"</b>"+normText;      
+        document.querySelectorAll("#post > div.post-o-lst > ol>li")[i].innerHTML="<b>"+bldText+"</b>"+normText;      
       }  
       document.querySelector("div.post-para > p").innerText=child.getElementsByTagName("p")[1].childNodes[0].nodeValue;
       try{
-          document.querySelector(".post-o-lst > div > ol").removeChild(document.querySelector("#HTML202")); 
+          document.querySelector("#post > div.post-o-lst > ol").removeChild(document.querySelector("#HTML202")); 
       }
       catch(err){}
   }
