@@ -48,7 +48,7 @@ html {
     margin: 10px !important;
 }
 
-#post > div.post-o-lst > h1 {
+#post > div.post-o-lst h1 {
     font-size: larger !important;
     font-weight: 700 !important;
     color: brown !important;
