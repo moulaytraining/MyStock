@@ -88,16 +88,16 @@ html {
         max-width: 65% !important;
     }
 
-    div:nth-child(odd of .post-secdiv>h1) {
+    #post>div.post-sec>div>h1 {
         font-size: larger !important;
         font-weight: 700 !important; 
     }
 
-    div:nth-child(even of .post-secdiv>h1) { 
+    h1:nth-child(odd of .post-secdiv>h1) { 
         color: #e61111 !important;
     }
 
-    #post>div.post-sec>div>h1:nth-child(2)  { 
+   h1:nth-child(even of .post-secdiv>h1)  { 
         color: #4d11e6 !important;
     }
 
