@@ -81,7 +81,7 @@ html {
     }
 
     #post>div.post-sec:nth-child(even) {
-        background-color: #63f6f387 !important;
+        background-color: #e6adef87 !important;
     }
 
     #post>div.post-sec>div {
@@ -92,6 +92,14 @@ html {
         font-size: larger !important;
         font-weight: 700 !important;
         color: #e61111 !important;
+    }
+
+    #post>div.post-sec>div>h1:nth-child(odd)  { 
+        color: #e61111 !important;
+    }
+
+    #post>div.post-sec>div>h1:nth-child(even)  { 
+        color: #4d11e6 !important;
     }
 
     #post>div.post-sec>div>p {
