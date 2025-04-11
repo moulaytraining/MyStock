@@ -34,8 +34,7 @@ html {
         font-size: medium !important;
     }
 
-    .post-para {
-        background-color: lightgray !important;
+    .post-para { 
         padding: 8px !important;
         margin: 10px !important;
     }
@@ -46,6 +45,27 @@ html {
         div:nth-child(even of .post-para) {
             background-color: #f8ffcd87 !important;
         }
+   .post-h1-p { 
+        padding: 8px !important;
+        margin: 10px !important;
+    }
+
+  div:nth-child(odd of .post-h1-p) {
+            background-color: #c8c9cb !important;
+        }
+        div:nth-child(even of .post-h1-p) {
+            background-color: #f8ffcd87 !important;
+        }
+
+ .post-h1-p-h1 { 
+        font-size: larger !important;
+        font-weight: 700 !important;
+        color: darkblue !important;
+    }
+
+ .post-h1-p-p { 
+        font-size: medium !important;
+    }
 
     .post-para p {
         font-size: medium !important;
