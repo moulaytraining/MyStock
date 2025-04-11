@@ -76,11 +76,11 @@ html {
         align-items: center !important;
     }
 
-    #post>div.post-sec:nth-child(odd) {
+    #post>div.post-sec:nth-child(1) {
         background-color: #63f66387 !important;
     }
 
-    #post>div.post-sec:nth-child(even) {
+    #post>div.post-sec:nth-child(2) {
         background-color: #e6adef87 !important;
     }
 
@@ -90,15 +90,14 @@ html {
 
     #post>div.post-sec>div>h1 {
         font-size: larger !important;
-        font-weight: 700 !important;
+        font-weight: 700 !important; 
+    }
+
+    #post>div.post-sec>div>h1:nth-child(1)  { 
         color: #e61111 !important;
     }
 
-    #post>div.post-sec>div>h1:nth-child(odd)  { 
-        color: #e61111 !important;
-    }
-
-    #post>div.post-sec>div>h1:nth-child(even)  { 
+    #post>div.post-sec>div>h1:nth-child(2)  { 
         color: #4d11e6 !important;
     }
 
