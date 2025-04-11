@@ -93,11 +93,11 @@ html {
         font-weight: 700 !important; 
     }
 
-    h1:nth-child(odd of .post-secdiv>h1) { 
+    h1:nth-child(odd of .post-sec>div>h1) { 
         color: #e61111 !important;
     }
 
-   h1:nth-child(even of .post-secdiv>h1)  { 
+   h1:nth-child(even of .post-sec>div>h1)  { 
         color: #4d11e6 !important;
     }
 
