@@ -69,12 +69,19 @@ html {
         font-size: 17px !important;
     }
 
-    #post>div.post-sec {
-        background-color: #63f66387 !important;
+    #post>div.post-sec { 
         display: flex !important;
         padding: 8px !important;
         margin: 10px !important;
         align-items: center !important;
+    }
+
+    #post>div.post-sec:nth-child(odd) {
+        background-color: #63f66387 !important;
+    }
+
+    #post>div.post-sec:nth-child(even) {
+        background-color: #63f6f387 !important;
     }
 
     #post>div.post-sec>div {
