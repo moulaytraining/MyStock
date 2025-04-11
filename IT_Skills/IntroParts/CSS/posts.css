@@ -40,6 +40,13 @@ html {
         margin: 10px !important;
     }
 
+        div:nth-child(odd of .post-para) {
+            background-color: #c8c9cb !important;
+        }
+        div:nth-child(even of .post-para) {
+            background-color: #f8ffcd87 !important;
+        }
+
     .post-para p {
         font-size: medium !important;
     }
