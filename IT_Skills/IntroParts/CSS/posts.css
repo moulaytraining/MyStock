@@ -1,110 +1,120 @@
 html {
-    direction: rtl !important;
-}
+        direction: rtl !important;
+    }
 
-  #post > header {
-    background-color: beige !important;
-    display: flex !important;
-    overflow: hidden !important;
-    padding: 10px !important;
-}
+    #post>header {
+        background-color: beige !important;
+        display: flex !important;
+        overflow: hidden !important;
+        padding: 10px !important;
+    }
 
-#post > header > strong {
-    max-width: 70% !important;
-    font-size: large !important;
-    text-align: center !important;
-    margin: auto 10px !important;
-    padding: 8px !important;
-    color: darkblue !important;
-}
+    #post>header>strong {
+        max-width: 70% !important;
+        font-size: large !important;
+        text-align: center !important;
+        margin: auto 10px !important;
+        padding: 8px !important;
+        color: darkblue !important;
+    }
 
-#post > header > img { 
-    margin: auto !important;
-    padding: 8px !important;
-    overflow: hidden !important;
-}
+    #post>header>img {
+        margin: auto !important;
+        padding: 8px !important;
+        overflow: hidden !important;
+    }
 
-.post-introPara {
-    background-color: lightgray !important;
-    padding: 8px !important;
-    margin: 10px !important;
-}
+    .post-introPara {
+        background-color: lightgray !important;
+        padding: 8px !important;
+        margin: 10px !important;
+    }
 
-.post-introPara p {
-    font-size: medium !important; 
-}
-.post-para {
-    background-color: lightgray !important;
-    padding: 8px !important;
-    margin: 10px !important;
-}
+    .post-introPara p {
+        font-size: medium !important;
+    }
 
-.post-para p {
-    font-size: medium !important; 
-}
-#post > div.post-o-lst {
-    background-color: lightskyblue !important;
-    padding: 10px !important;
-    margin: 10px !important;
-}
+    .post-para {
+        background-color: lightgray !important;
+        padding: 8px !important;
+        margin: 10px !important;
+    }
 
-#post > div.post-o-lst > h1 {
-    font-size: larger !important;
-    font-weight: 700 !important;
-    color: brown !important;
-}
+    .post-para p {
+        font-size: medium !important;
+    }
 
-#post > div.post-o-lst > ol {
-    font-size: 15px !important;
-}
+    #post>div.post-o-lst {
+        background-color: lightskyblue !important;
+        padding: 10px !important;
+        margin: 10px !important;
+    }
 
-#post > div.post-o-lst > ol> li {
-    list-style-type: decimal;
-    font-size: 15px !important;
-}
+    #post>div.post-o-lst>h1 {
+        font-size: larger !important;
+        font-weight: 700 !important;
+        color: brown !important;
+    }
 
-#post > div.post-o-lst > ol >li b {
-    font-size: 17px !important;
-}
+    #post>div.post-o-lst>ol {
+        font-size: 15px !important;
+    }
 
-#post > div.post-sec {
-    background-color: #63f66387 !important;
-    display: flex !important;
-    padding: 8px !important;
-    margin: 10px !important;
-    align-items: center!important;
-}
+    #post>div.post-o-lst>ol>li {
+        list-style-type: decimal;
+        font-size: 15px !important;
+    }
 
-#post > div.post-sec > div{
-    max-width: 65% !important;
-}
-#post > div.post-sec > div > h1 {
-  font-size: larger !important;
-  font-weight: 700 !important;
-  color: #e61111 !important; 
-}
-#post > div.post-sec > div > p { 
-    font-size: medium !important; 
-}
-#post > div.post-sec > img, .post-body img:not(.slider img) {
-    width: 35% !important;
-    margin: auto !important;
-    padding: 8px !important;
-    border: none!important;
-    overflow: hidden !important;
-}
+    #post>div.post-o-lst>ol>li b {
+        font-size: 17px !important;
+    }
 
-@media screen and (max-width: 600px) {
-#post > header,.post-o-lst {
-  float: right !important;
-  display: block !important;
-  clear: both!important;
-} 
-#post > header > strong {
-  font-size: medium !important;
-} 
-#post > header > img {
-  width: 100% !important; 
-  height: 100% !important;
-}
-}
+    #post>div.post-sec {
+        background-color: #63f66387 !important;
+        display: flex !important;
+        padding: 8px !important;
+        margin: 10px !important;
+        align-items: center !important;
+    }
+
+    #post>div.post-sec>div {
+        max-width: 65% !important;
+    }
+
+    #post>div.post-sec>div>h1 {
+        font-size: larger !important;
+        font-weight: 700 !important;
+        color: #e61111 !important;
+    }
+
+    #post>div.post-sec>div>p {
+        font-size: medium !important;
+    }
+
+    #post>div.post-sec>img,
+    .post-body img:not(.slider img) {
+        width: 35% !important;
+        margin: auto !important;
+        padding: 8px !important;
+        border: none !important;
+        overflow: hidden !important;
+    }
+
+    @media screen and (max-width: 600px) {
+
+        #post>header,
+        .post-o-lst {
+            float: right !important;
+            display: block !important;
+            clear: both !important;
+        }
+
+        #post>header>strong {
+            font-size: medium !important;
+        }
+
+        #post>header>img {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
