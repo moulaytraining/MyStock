@@ -57,13 +57,13 @@ html {
             background-color: #f8ffcd87 !important;
         }
 
- .post-h1-p-h1 { 
+ .post-h1-p h1 { 
         font-size: larger !important;
         font-weight: 700 !important;
         color: darkblue !important;
     }
 
- .post-h1-p-p { 
+ .post-h1-p p { 
         font-size: medium !important;
     }
 
