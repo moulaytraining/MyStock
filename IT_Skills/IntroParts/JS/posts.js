@@ -15,7 +15,7 @@
       for (i = 0; i < x.length; i++) {if(x[i].getAttribute("id") == arg1){var child=x[i]};}   
      // console.log(arg1);
       document.querySelector("#post > header > strong").innerText=child.getElementsByTagName("strong")[0].childNodes[0].nodeValue;
-      document.querySelector("#post > header > img").setAttribute("src",child.getElementsByTagName("img")[0].childNodes[0].nodeValue);
+      document.querySelector("#post > header > a>img").setAttribute("src",child.getElementsByTagName("img")[0].childNodes[0].nodeValue);
       document.querySelector("#post > header > a").setAttribute("href",child.getElementsByTagName("img")[0].childNodes[0].nodeValue);
       if(document.querySelectorAll(".post-introPara p").length!=0){document.querySelector(".post-introPara p").innerText=child.getElementsByTagName("intro-p")[0].childNodes[0].nodeValue;}; 
 //Work on repeated texts
