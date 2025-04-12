@@ -127,12 +127,13 @@ html {
     }
 
     #post>div.post-sec>div {
-        max-width: 65% !important;
+        width: 50% !important;
     }
 
     #post>div.post-sec>div>h1 {
         font-size: larger !important;
         font-weight: 700 !important; 
+        padding: 10px !important;
     }
 
     div:nth-child(odd of .post-sec) > div > h1 { 
