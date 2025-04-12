@@ -60,7 +60,7 @@
     } 
 //Work on repeated links
     var rptdLinks=[[".post-cen-link a","post-cen-link-a"]];
-    for (i = 0; i < rptdLinkslength; i++) {
+    for (i = 0; i < rptdLinks.length; i++) {
     	if(rptdLinks[i][0]!=""){
           if(document.querySelectorAll(rptdLinks[i][0]).length!=0){
     //console.log(rptdImgs[i][0]);
