@@ -55,6 +55,18 @@
           }
         }
     } 
+//Work on repeated links
+    var rptdLinks=[[".post-cen-link a","post-cen-link-a"]];
+    for (i = 0; i < rptdLinkslength; i++) {
+    	if(rptdLinks[i][0]!=""){
+          if(document.querySelectorAll(rptdLinks[i][0]).length!=0){
+    //console.log(rptdImgs[i][0]);
+        	for (j = 0; j < document.querySelectorAll(rptdLinks[i][0]).length; j++) {
+           		document.querySelectorAll(rptdLinks[i][0])[j].setAttribute("href",child.getElementsByTagName(rptdLinks[i][1])[j].childNodes[0].nodeValue);   
+           }
+          }
+        }
+    }
     for(k = 0; k < document.querySelectorAll(".post-o-lst>ol>li").length.length; k++){
       try{
           document.querySelectorAll("#post > div.post-o-lst > ol")[k].removeChild(document.querySelector("#HTML202")); 
