@@ -154,6 +154,20 @@ html {
         overflow: hidden !important;
     }
 
+.post-cen-link {        
+        background-color: #0a07e1 !important; 
+        clear: both!important;
+        text-align: center!important;
+        padding:8px!important;
+}
+.post-cen-link a {
+    color: yellow!important;
+    font-weight: bold!important;
+} 
+.post-cen-link a:hover {
+    color: #c0f374 !important; 
+    text-decoration: underline red !important; 
+} 
     @media screen and (max-width: 600px) {
 
         #post>header,
