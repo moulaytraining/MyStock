@@ -16,6 +16,7 @@
      // console.log(arg1);
       document.querySelector("#post > header > strong").innerText=child.getElementsByTagName("strong")[0].childNodes[0].nodeValue;
       document.querySelector("#post > header > img").setAttribute("src",child.getElementsByTagName("img")[0].childNodes[0].nodeValue);
+      document.querySelector("#post > header > a").setAttribute("href",child.getElementsByTagName("img")[0].childNodes[0].nodeValue);
       if(document.querySelectorAll(".post-introPara p").length!=0){document.querySelector(".post-introPara p").innerText=child.getElementsByTagName("intro-p")[0].childNodes[0].nodeValue;}; 
 //Work on repeated texts
     var rptdTexts=[[".post-para p","post-para"],[".post-h1 h1","post-h1"],[".post-o-lst h1","lst-h1"],[".post-sec>div>h1","post-sec-h1"],[".post-sec>div>p","post-sec-p"],[".post-h1-p h1","post-h1-p-h1"],[".post-h1-p p","post-h1-p-p"]];
