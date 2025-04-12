@@ -63,6 +63,14 @@ html {
         color: darkblue !important;
     }
 
+    div:nth-child(odd of .post-o-lst) > h1 { 
+        color: brown !important;
+    }
+
+   div:nth-child(even of .post-o-lst) > h1 { 
+        color: darkblue !important;
+    }
+
  .post-h1-p p { 
         font-size: medium !important;
     }
@@ -85,8 +93,7 @@ html {
 
     .post-o-lst h1 {
         font-size: larger !important;
-        font-weight: 700 !important;
-        color: brown !important;
+        font-weight: 700 !important; 
     }
 
     #post>div.post-o-lst>ol {
