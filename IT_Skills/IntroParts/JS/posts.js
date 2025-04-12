@@ -9,7 +9,7 @@
     xhttp.send();
   }
   function getIntroPostHtml(fileData,arg1){
-      var i;
+      var i,j,k;
       var xmlDoc = fileData.responseXML;  
       var x = xmlDoc.getElementsByTagName("post");
       for (i = 0; i < x.length; i++) {if(x[i].getAttribute("id") == arg1){var child=x[i]};}   
@@ -55,9 +55,11 @@
           }
         }
     } 
+    for(k = 0; k < document.querySelectorAll(".post-o-lst>ol>li").length.length; k++){
       try{
-          document.querySelector("#post > div.post-o-lst > ol").removeChild(document.querySelector("#HTML202")); 
+          document.querySelectorAll("#post > div.post-o-lst > ol")[k].removeChild(document.querySelector("#HTML202")); 
       }
       catch(err){}
+      }
   }
   function getIntroPostStyle(fileData,arg1){document.getElementById("post-style").innerText = fileData.responseText;}
