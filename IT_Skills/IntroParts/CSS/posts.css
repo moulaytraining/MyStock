@@ -147,8 +147,8 @@ html {
         font-size: medium !important;
     }
 
-    #post>div.post-sec>img{
-        width: 90% !important;
+    #post>div.post-sec>a>img{
+        height: 90% !important;
         margin: auto !important;
         padding: 8px !important;
         border: none !important;
