@@ -51,7 +51,7 @@ html {
     }
 
           div:nth-child(odd of .post-h1-p) {
-                background-color: #c8c9cb !important;
+                background-color: #e5e6e9 !important;
         }
         div:nth-child(even of .post-h1-p) {
             background-color: #f8ffcd87 !important;
