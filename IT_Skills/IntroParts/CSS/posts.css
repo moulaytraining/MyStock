@@ -104,7 +104,9 @@ html {
         list-style-type: decimal;
         font-size: 15px !important;
     }
-
+ #post>div.post-o-lst>ol>li:hover {
+    list-style: disc;
+}
     #post>div.post-o-lst>ol>li b {
         font-size: 17px !important;
     }
