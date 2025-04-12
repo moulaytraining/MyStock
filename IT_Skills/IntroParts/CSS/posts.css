@@ -50,8 +50,8 @@ html {
         margin: 10px !important;
     }
 
-  div:nth-child(odd of .post-h1-p) {
-            background-color: #c8c9cb !important;
+          div:nth-child(odd of .post-h1-p) {
+                background-color: #c8c9cb !important;
         }
         div:nth-child(even of .post-h1-p) {
             background-color: #f8ffcd87 !important;
@@ -71,11 +71,17 @@ html {
         font-size: medium !important;
     }
 
-    #post>div.post-o-lst {
-        background-color: lightskyblue !important;
+    #post>div.post-o-lst { 
         padding: 10px !important;
         margin: 10px !important;
     }
+
+          div:nth-child(odd of .post-o-lst) {
+                background-color: lightskyblue !important;
+        }
+        div:nth-child(even of .post-o-lst) {
+            background-color: #abdcd6 !important;
+        }
 
     .post-o-lst h1 {
         font-size: larger !important;
