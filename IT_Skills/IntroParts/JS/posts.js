@@ -23,7 +23,7 @@
     	if(rptdTexts[i][0]!=""){
           if(document.querySelectorAll(rptdTexts[i][0]).length!=0){
         	for (j = 0; j < document.querySelectorAll(rptdTexts[i][0]).length; j++) {
-    console.log(rptdTexts[i][0]+" "+document.querySelectorAll(rptdTexts[i][0]).length);
+    // console.log(rptdTexts[i][0]+" "+document.querySelectorAll(rptdTexts[i][0]).length);
            		document.querySelectorAll(rptdTexts[i][0])[j].innerText=child.getElementsByTagName(rptdTexts[i][1])[j].childNodes[0].nodeValue;   
            }
           }
