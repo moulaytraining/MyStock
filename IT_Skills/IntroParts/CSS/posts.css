@@ -133,7 +133,7 @@ div:nth-child(even of .post-sec) {
 }
 
 #post>div.post-sec>div {
-    width: 50% !important;
+    width: 60% !important;
 }
 
 #post>div.post-sec>div>h1 {
@@ -154,17 +154,17 @@ div:nth-child(even of .post-sec)>div>h1 {
     font-size: medium !important;
 }
 
-#post>div.post-sec>a>img {
-    max-width: 70% !important;
+#post>div.post-sec>a {
+    width: 40% !important;
+}
+
+#post>div.post-sec>a>img { 
     height: 90% !important;
     margin: auto !important;
     padding: 8px !important;
     border: none !important;
     overflow: hidden !important;
-}
-
-#post>div.post-sec>a {
-    width: 50% !important;
+    float: left !important;
 }
 
 .post-cen-link {
