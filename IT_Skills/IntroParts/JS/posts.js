@@ -21,10 +21,8 @@ function getFileData(file,callBack,arg1) {
 //Work on repeated texts
     var rptdTexts=[["#post > header > strong","strong"],[".post-introPara p","intro-p"],[".post-para p","post-para"],[".post-h1 h1","post-h1"],[".post-o-lst h1","lst-h1"],["#post > div.post-sec > div > h1","post-sec-h1"],[".post-sec>div>p","post-sec-p"],[".post-h1-p h1","post-h1-p-h1"],[".post-h1-p p","post-h1-p-p"]];
     for (i = 0; i < rptdTexts.length; i++) { 
-      console.log(i);
     	if(rptdTexts[i][0]!=""){
           if(document.querySelectorAll(rptdTexts[i][0]).length!=0){
-            console.log(document.querySelectorAll(rptdTexts[i][0]).length);
         	for (j = 0; j < document.querySelectorAll(rptdTexts[i][0]).length; j++) {
     // console.log(rptdTexts[i][0]+" "+document.querySelectorAll(rptdTexts[i][0]).length);
            		document.querySelectorAll(rptdTexts[i][0])[j].innerText=child.getElementsByTagName(rptdTexts[i][1])[j].childNodes[0].nodeValue;   
@@ -35,8 +33,10 @@ function getFileData(file,callBack,arg1) {
 //Work on sec images
     var rptdImgs=[["#post > header > a","href","img"],["#post > div.post-sec > a","title",postTitle],["#post > div.post-sec > a > img","src","img"],["#post > div.post-sec > a > img","alt",postTitle],["#post > div.post-sec > a","href","post-sec-img"],["#post > div.post-sec > a","title","post-sec-h1"],["#post > div.post-sec > a > img","src","post-sec-img"],["#post > div.post-sec > a > img","alt","post-sec-h1"],["#post > div.post-sec > a","href","post-img"],["#post > div.post-sec > a","title","post-img-alt"],["#post > div.post-sec > a > img","src","post-img"],["#post > div.post-sec > a > img","alt","post-img-alt"]]; 
     for (i = 0; i < rptdImgs.length; i++) {
+      console.log(i);
     	if(rptdImgs[i][0]!=""){
           if(document.querySelectorAll(rptdImgs[i][0]).length!=0){
+            console.log(document.querySelectorAll(rptdImgs[i][0]).length);
     //console.log(rptdImgs[i][0]);
         	for (j = 0; j < document.querySelectorAll(rptdImgs[i][0]).length; j++) {
            		document.querySelectorAll(rptdImgs[i][0])[j].setAttribute(rptdImgs[i][1],child.getElementsByTagName(rptdImgs[i][2])[j].childNodes[0].nodeValue);  
