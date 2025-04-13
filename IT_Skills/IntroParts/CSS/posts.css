@@ -149,13 +149,16 @@ html {
     }
 
     #post>div.post-sec>a>img{
+        max-width: 70%;
         height: 90% !important;
         margin: auto !important;
         padding: 8px !important;
         border: none !important;
         overflow: hidden !important;
     }
-
+#post > div.post-sec > a{
+        width: 50%!important;
+}
 .post-cen-link {        
         background-color: #0a07e1 !important; 
         clear: both!important;
