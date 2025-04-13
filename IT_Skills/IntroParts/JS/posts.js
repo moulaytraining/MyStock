@@ -21,9 +21,9 @@
 //Work on repeated texts
     var rptdTexts=[[".post-para p","post-para"],[".post-h1 h1","post-h1"],[".post-o-lst h1","lst-h1"],[".post-sec>div>h1","post-sec-h1"],[".post-sec>div>p","post-sec-p"],[".post-h1-p h1","post-h1-p-h1"],[".post-h1-p p","post-h1-p-p"]];
     for (i = 0; i < rptdTexts.length; i++) {
-      console.log(rptdTexts[i][0]).length!);
     	if(rptdTexts[i][0]!=""){
           if(document.querySelectorAll(rptdTexts[i][0]).length!=0){
+      console.log(rptdTexts[i][0]).length!);
         	for (j = 0; j < document.querySelectorAll(rptdTexts[i][0]).length; j++) {
     // console.log(rptdTexts[i][0]+" "+document.querySelectorAll(rptdTexts[i][0]).length);
            		document.querySelectorAll(rptdTexts[i][0])[j].innerText=child.getElementsByTagName(rptdTexts[i][1])[j].childNodes[0].nodeValue;   
