@@ -12,9 +12,9 @@ function getFileData(file,callBack,arg1) {
       var i,j,k;
       var xmlDoc = fileData.responseXML;  
       var x = xmlDoc.getElementsByTagName("post");
-      for (i = 0; i < x.length; i++) {if(x[i].getAttribute("id") == arg1){var child=x[i]};}   
-     // console.log(arg1);
-     var postTitle=document.querySelector("#Blog1 > div > div > div > h1").innerText;
+      for (i = 0; i < x.length; i++) {if(x[i].getAttribute("id") == arg1){var child=x[i]};} 
+     var postTitle=document.querySelector("#Blog1 > div > div > div > h1").innerText;  
+     console.log(postTitle);
     //   document.querySelector("#post > header > strong").innerText=child.getElementsByTagName("strong")[0].childNodes[0].nodeValue;
     //   document.querySelector("#post > header > a > img").setAttribute("src",child.getElementsByTagName("img")[0].childNodes[0].nodeValue);
     //   document.querySelector("#post > header > a").setAttribute("href",child.getElementsByTagName("img")[0].childNodes[0].nodeValue);
