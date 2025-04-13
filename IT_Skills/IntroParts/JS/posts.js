@@ -71,11 +71,13 @@
           }
         }
     }
+    for(z = 0; k < 2; z++){
     for(k = 0; k < document.querySelectorAll(".post-o-lst>ol>li").length; k++){
       try{
           document.querySelectorAll(".post-o-lst>ol>li")[k].removeChild(document.querySelector("#HTML202")); 
       }
       catch(err){}
       } 
+    }
   }
-  function getIntroPostStyle(fileData,arg1){document.getElementById("post-style").innerText = fileData.responseText;location.reload();}
+  function getIntroPostStyle(fileData,arg1){document.getElementById("post-style").innerText = fileData.responseText;//location.reload();}
