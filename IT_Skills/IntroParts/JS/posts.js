@@ -1,4 +1,4 @@
-  function getFileData(file,callBack,arg1) {
+function getFileData(file,callBack,arg1) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
@@ -14,12 +14,12 @@
       var x = xmlDoc.getElementsByTagName("post");
       for (i = 0; i < x.length; i++) {if(x[i].getAttribute("id") == arg1){var child=x[i]};}   
      // console.log(arg1);
-      document.querySelector("#post > header > strong").innerText=child.getElementsByTagName("strong")[0].childNodes[0].nodeValue;
-      document.querySelector("#post > header > a > img").setAttribute("src",child.getElementsByTagName("img")[0].childNodes[0].nodeValue);
-      document.querySelector("#post > header > a").setAttribute("href",child.getElementsByTagName("img")[0].childNodes[0].nodeValue);
-      if(document.querySelectorAll(".post-introPara p").length!=0){document.querySelector(".post-introPara p").innerText=child.getElementsByTagName("intro-p")[0].childNodes[0].nodeValue;}; 
+     var postTitle=document.querySelector("#Blog1 > div > div > div > h1").innerText;
+    //   document.querySelector("#post > header > strong").innerText=child.getElementsByTagName("strong")[0].childNodes[0].nodeValue;
+    //   document.querySelector("#post > header > a > img").setAttribute("src",child.getElementsByTagName("img")[0].childNodes[0].nodeValue);
+    //   document.querySelector("#post > header > a").setAttribute("href",child.getElementsByTagName("img")[0].childNodes[0].nodeValue);
 //Work on repeated texts
-    var rptdTexts=[[".post-para p","post-para"],[".post-h1 h1","post-h1"],[".post-o-lst h1","lst-h1"],["#post > div.post-sec > div > h1","post-sec-h1"],[".post-sec>div>p","post-sec-p"],[".post-h1-p h1","post-h1-p-h1"],[".post-h1-p p","post-h1-p-p"]];
+    var rptdTexts=[["#post > header > strong","strong"],[".post-introPara p","intro-p"],[".post-para p","post-para"],[".post-h1 h1","post-h1"],[".post-o-lst h1","lst-h1"],["#post > div.post-sec > div > h1","post-sec-h1"],[".post-sec>div>p","post-sec-p"],[".post-h1-p h1","post-h1-p-h1"],[".post-h1-p p","post-h1-p-p"]];
     for (i = 0; i < rptdTexts.length; i++) { 
       console.log(i);
     	if(rptdTexts[i][0]!=""){
@@ -33,7 +33,7 @@
         }
     }
 //Work on sec images
-    var rptdImgs=[["#post > div.post-sec > a","href","post-sec-img"],["#post > div.post-sec > a","title","post-sec-h1"],["#post > div.post-sec > a > img","src","post-sec-img"]]; 
+    var rptdImgs=[["#post > header > a","href","img"],["#post > div.post-sec > a","title",postTitle],["#post > div.post-sec > a > img","src","img"],["#post > div.post-sec > a > img","alt",postTitle],["#post > div.post-sec > a","href","post-sec-img"],["#post > div.post-sec > a","title","post-sec-h1"],["#post > div.post-sec > a > img","src","post-sec-img"],["#post > div.post-sec > a > img","alt","post-sec-h1"],["#post > div.post-sec > a","href","post-img"],["#post > div.post-sec > a","title","post-img-alt"],["#post > div.post-sec > a > img","src","post-img"],["#post > div.post-sec > a > img","alt","post-img-alt"]]; 
     for (i = 0; i < rptdImgs.length; i++) {
     	if(rptdImgs[i][0]!=""){
           if(document.querySelectorAll(rptdImgs[i][0]).length!=0){
