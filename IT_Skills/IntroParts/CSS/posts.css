@@ -149,7 +149,7 @@ html {
     }
 
     #post>div.post-sec>a>img{
-        max-width: 70%;
+        max-width: 70%!important;
         height: 90% !important;
         margin: auto !important;
         padding: 8px !important;
