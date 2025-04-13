@@ -1,193 +1,204 @@
 html {
-        direction: rtl !important;
-    }
+    direction: rtl !important;
+}
 
-    #post>header {
-        background-color: beige !important;
-        display: flex !important;
-        overflow: hidden !important;
-        padding: 10px !important;
+#post>header {
+    background-color: beige !important;
+    display: flex !important;
+    overflow: hidden !important;
+    padding: 10px !important;
+}
+
+#post>header>strong {
+    max-width: 70% !important;
+    font-size: large !important;
+    text-align: center !important;
+    margin: auto 10px !important;
+    padding: 8px !important;
+    color: darkblue !important;
+}
+
+#post>header>a>img {
+    margin: auto !important;
+    padding: 8px !important;
+    overflow: hidden !important;
+}
+
+.post-introPara {
+    background-color: #e5e6e9 !important;
+    padding: 8px !important;
+    margin: 10px !important;
+}
+
+.post-introPara p {
+    font-size: medium !important;
+}
+
+.post-para {
+    padding: 8px !important;
+    margin: 10px !important;
+}
+
+div:nth-child(odd of .post-para) {
+    background-color: #c8c9cb !important;
+}
+
+div:nth-child(even of .post-para) {
+    background-color: #f8ffcd87 !important;
+}
+
+.post-h1-p {
+    padding: 8px !important;
+    margin: 10px !important;
+}
+
+div:nth-child(odd of .post-h1-p) {
+    background-color: #e5e6e9 !important;
+}
+
+div:nth-child(even of .post-h1-p) {
+    background-color: #f8ffcd87 !important;
+}
+
+.post-h1-p h1 {
+    font-size: larger !important;
+    font-weight: 700 !important;
+    color: darkblue !important;
+}
+
+div:nth-child(odd of .post-o-lst)>h1 {
+    color: brown !important;
+}
+
+div:nth-child(even of .post-o-lst)>h1 {
+    color: darkblue !important;
+}
+
+.post-h1-p p {
+    font-size: medium !important;
+}
+
+.post-para p {
+    font-size: medium !important;
+}
+
+#post>div.post-o-lst {
+    padding: 10px !important;
+    margin: 10px !important;
+}
+
+div:nth-child(odd of .post-o-lst) {
+    background-color: lightskyblue !important;
+}
+
+div:nth-child(even of .post-o-lst) {
+    background-color: #abdcd6 !important;
+}
+
+.post-o-lst h1 {
+    font-size: larger !important;
+    font-weight: 700 !important;
+}
+
+#post>div.post-o-lst>ol {
+    font-size: 15px !important;
+}
+
+#post>div.post-o-lst>ol>li {
+    list-style-type: decimal;
+    font-size: 15px !important;
+}
+
+#post>div.post-o-lst>ol>li:hover {
+    list-style: disc;
+}
+
+#post>div.post-o-lst>ol>li b {
+    font-size: 17px !important;
+}
+
+#post>div.post-sec {
+    display: flex !important;
+    padding: 8px !important;
+    margin: 10px !important;
+    align-items: center !important;
+}
+
+div:nth-child(odd of .post-sec) {
+    background-color: #63f66387 !important;
+}
+
+div:nth-child(even of .post-sec) {
+    background-color: #e6adef87 !important;
+}
+
+#post>div.post-sec>div {
+    width: 50% !important;
+}
+
+#post>div.post-sec>div>h1 {
+    font-size: larger !important;
+    font-weight: 700 !important;
+    padding: 10px !important;
+}
+
+div:nth-child(odd of .post-sec)>div>h1 {
+    color: #e61111 !important;
+}
+
+div:nth-child(even of .post-sec)>div>h1 {
+    color: #4d11e6 !important;
+}
+
+#post>div.post-sec>div>p {
+    font-size: medium !important;
+}
+
+#post>div.post-sec>a>img {
+    max-width: 70% !important;
+    height: 90% !important;
+    margin: auto !important;
+    padding: 8px !important;
+    border: none !important;
+    overflow: hidden !important;
+}
+
+#post>div.post-sec>a {
+    width: 50% !important;
+}
+
+.post-cen-link {
+    background-color: #0a07e1 !important;
+    clear: both !important;
+    text-align: center !important;
+    padding: 8px !important;
+}
+
+.post-cen-link a {
+    color: yellow !important;
+    font-weight: bold !important;
+}
+
+.post-cen-link a:hover {
+    color: #c0f374 !important;
+    text-decoration: underline red !important;
+}
+
+@media screen and (max-width: 600px) {
+
+    #post>header,
+    .post-o-lst {
+        float: right !important;
+        display: block !important;
+        clear: both !important;
     }
 
     #post>header>strong {
-        max-width: 70% !important;
-        font-size: large !important;
-        text-align: center !important;
-        margin: auto 10px !important;
-        padding: 8px !important;
-        color: darkblue !important;
-    }
-
-    #post>header>a>img {
-        margin: auto !important;
-        padding: 8px !important;
-        overflow: hidden !important;
-    }
-
-    .post-introPara {
-        background-color: #e5e6e9 !important;
-        padding: 8px !important;
-        margin: 10px !important;
-    }
-
-    .post-introPara p {
         font-size: medium !important;
     }
 
-    .post-para { 
-        padding: 8px !important;
-        margin: 10px !important;
+    #post>header>img {
+        width: 100% !important;
+        height: 100% !important;
     }
-
-        div:nth-child(odd of .post-para) {
-            background-color: #c8c9cb !important;
-        }
-        div:nth-child(even of .post-para) {
-            background-color: #f8ffcd87 !important;
-        }
-   .post-h1-p { 
-        padding: 8px !important;
-        margin: 10px !important;
-    }
-
-          div:nth-child(odd of .post-h1-p) {
-                background-color: #e5e6e9 !important;
-        }
-        div:nth-child(even of .post-h1-p) {
-            background-color: #f8ffcd87 !important;
-        }
-
- .post-h1-p h1 { 
-        font-size: larger !important;
-        font-weight: 700 !important;
-        color: darkblue !important;
-    }
-
-    div:nth-child(odd of .post-o-lst) > h1 { 
-        color: brown !important;
-    }
-
-   div:nth-child(even of .post-o-lst) > h1 { 
-        color: darkblue !important;
-    }
-
- .post-h1-p p { 
-        font-size: medium !important;
-    }
-
-    .post-para p {
-        font-size: medium !important;
-    }
-
-    #post>div.post-o-lst { 
-        padding: 10px !important;
-        margin: 10px !important;
-    }
-
-          div:nth-child(odd of .post-o-lst) {
-                background-color: lightskyblue !important;
-        }
-        div:nth-child(even of .post-o-lst) {
-            background-color: #abdcd6 !important;
-        }
-
-    .post-o-lst h1 {
-        font-size: larger !important;
-        font-weight: 700 !important; 
-    }
-
-    #post>div.post-o-lst>ol {
-        font-size: 15px !important;
-    }
-
-    #post>div.post-o-lst>ol>li {
-        list-style-type: decimal;
-        font-size: 15px !important;
-    }
- #post>div.post-o-lst>ol>li:hover {
-    list-style: disc;
 }
-    #post>div.post-o-lst>ol>li b {
-        font-size: 17px !important;
-    }
-
-    #post>div.post-sec { 
-        display: flex !important;
-        padding: 8px !important;
-        margin: 10px !important;
-        align-items: center !important;
-    }
-
-   div:nth-child(odd of .post-sec) {
-        background-color: #63f66387 !important;
-    }
-
-    div:nth-child(even of .post-sec) {
-        background-color: #e6adef87 !important;
-    }
-
-    #post>div.post-sec>div {
-        width: 50% !important;
-    }
-
-    #post>div.post-sec>div>h1 {
-        font-size: larger !important;
-        font-weight: 700 !important; 
-        padding: 10px !important;
-    }
-
-    div:nth-child(odd of .post-sec) > div > h1 { 
-        color: #e61111 !important;
-    }
-
-   div:nth-child(even of .post-sec) > div > h1 { 
-        color: #4d11e6 !important;
-    }
-
-    #post>div.post-sec>div>p {
-        font-size: medium !important;
-    }
-
-    #post>div.post-sec>a>img{
-        max-width: 70%!important;
-        height: 90% !important;
-        margin: auto !important;
-        padding: 8px !important;
-        border: none !important;
-        overflow: hidden !important;
-    }
-#post > div.post-sec > a{
-        width: 50%!important;
-}
-.post-cen-link {        
-        background-color: #0a07e1 !important; 
-        clear: both!important;
-        text-align: center!important;
-        padding:8px!important;
-}
-.post-cen-link a {
-    color: yellow!important;
-    font-weight: bold!important;
-} 
-.post-cen-link a:hover {
-    color: #c0f374 !important; 
-    text-decoration: underline red !important; 
-} 
-    @media screen and (max-width: 600px) {
-
-        #post>header,
-        .post-o-lst {
-            float: right !important;
-            display: block !important;
-            clear: both !important;
-        }
-
-        #post>header>strong {
-            font-size: medium !important;
-        }
-
-        #post>header>img {
-            width: 100% !important;
-            height: 100% !important;
-        }
-    }
