@@ -33,7 +33,7 @@
         }
     }
 //Work on sec images
-    var rptdImgs=[["#post > div.post-sec > a > img","src","post-sec-img"],["#post > div.post-sec > a","href","post-sec-img"]]; 
+    var rptdImgs=[["#post > div.post-sec > a","href","post-sec-img"],["#post > div.post-sec > a","title","post-sec-h1"],["#post > div.post-sec > a > img","src","post-sec-img"]]; 
     for (i = 0; i < rptdImgs.length; i++) {
     	if(rptdImgs[i][0]!=""){
           if(document.querySelectorAll(rptdImgs[i][0]).length!=0){
