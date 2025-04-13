@@ -80,4 +80,4 @@
       } 
     }
   }
-  function getIntroPostStyle(fileData,arg1){document.getElementById("post-style").innerText = fileData.responseText;//location.reload();}
+  function getIntroPostStyle(fileData,arg1){document.getElementById("post-style").innerText = fileData.responseText;}
