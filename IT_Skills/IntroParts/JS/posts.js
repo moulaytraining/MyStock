@@ -31,7 +31,7 @@ function getFileData(file,callBack,arg1) {
         }
     }
 //Work on sec images
-    var rptdImgs=[["#post > header > a","href","img"],["#post > div.post-sec > a","title",postTitle],["#post > div.post-sec > a > img","src","img"],["#post > div.post-sec > a > img","alt",postTitle],["#post > div.post-sec > a","href","post-sec-img"],["#post > div.post-sec > a","title","post-sec-h1"],["#post > div.post-sec > a > img","src","post-sec-img"],["#post > div.post-sec > a > img","alt","post-sec-h1"],["#post > div.post-sec > a","href","post-img"],["#post > div.post-sec > a","title","post-img-alt"],["#post > div.post-sec > a > img","src","post-img"],["#post > div.post-sec > a > img","alt","post-img-alt"]]; 
+    var rptdImgs=[["#post > header > a","href","img"],["#post > div.post-sec > a","title","post-title"],["#post > div.post-sec > a > img","src","img"],["#post > div.post-sec > a > img","alt","post-title"],["#post > div.post-sec > a","href","post-sec-img"],["#post > div.post-sec > a","title","post-sec-h1"],["#post > div.post-sec > a > img","src","post-sec-img"],["#post > div.post-sec > a > img","alt","post-sec-h1"],["#post > div.post-sec > a","href","post-img"],["#post > div.post-sec > a","title","post-img-alt"],["#post > div.post-sec > a > img","src","post-img"],["#post > div.post-sec > a > img","alt","post-img-alt"]]; 
     for (i = 0; i < rptdImgs.length; i++) {
       console.log(i);
     	if(rptdImgs[i][0]!=""){
