@@ -78,4 +78,4 @@
       catch(err){}
       } 
   }
-  function getIntroPostStyle(fileData,arg1){document.getElementById("post-style").innerText = fileData.responseText;}
+  function getIntroPostStyle(fileData,arg1){document.getElementById("post-style").innerText = fileData.responseText;location.reload();}
