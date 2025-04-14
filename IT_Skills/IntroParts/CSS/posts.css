@@ -186,7 +186,7 @@ div:nth-child(even of .post-sec)>div>h1 {
     font-weight: bold !important;
 }
 
-.post-cen-link a:hover {
+#post > div.post-cen-link > a:hover {
     color: #c0f374 !important;
     text-decoration: underline red !important;
 }
