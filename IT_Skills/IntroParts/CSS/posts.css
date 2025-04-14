@@ -8,7 +8,9 @@ html {
     overflow: hidden !important;
     padding: 10px !important;
 }
-
+#post > header > a{
+    width: 45% !important;
+}
 #post>header>strong {
     max-width: 70% !important;
     font-size: large !important;
@@ -22,6 +24,7 @@ html {
     margin: auto !important;
     padding: 8px !important;
     overflow: hidden !important;
+    float: left !important;
 }
 
 .post-introPara {
